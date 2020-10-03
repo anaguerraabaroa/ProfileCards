@@ -1,0 +1,54 @@
+.mainLanding {
+  background-color: $colorBg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 26.4px 0 25.6px;
+
+  &__logo {
+    margin-top: 95px;
+    margin-bottom: 35.4px;
+    &--img {
+      width: 250px;
+    }
+  }
+
+  &__text {
+    &--title {
+      font-family: $fontTerciary;
+      font-size: 19.2px;
+      color: $colorPrimary;
+    }
+    &--subtitle {
+      font-family: $fontPrimary;
+      font-size: 12.8px;
+      color: $colorPal1Dark;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    border: 1.6px solid $colorPrimaryLight;
+    border-radius: 4px;
+    padding: 15px 0 17.8px 0;
+    margin: 17.8px 0 38.6px 0px;
+    width: 268px;
+
+    &--icon {
+      color: $colorPrimary;
+      font-size: 12.8px;
+    }
+
+    .iconTitle {
+      font-family: $fontPrimary;
+      font-size: 12.8px;
+      color: $colorSecondary;
+    }
+  }
+}

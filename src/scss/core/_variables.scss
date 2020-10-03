@@ -7,6 +7,7 @@ $fontTerciary: "Merriweather", serif;
 $colorWhite: #ffffff;
 $colorBg: #f5f5f5;
 $colorPrimary: #e17334;
+$colorPrimaryLight: lighten($colorPrimary, 35%);
 $colorSecondary: #54585a;
 $colorBrand1: #6b6b6b;
 $colorBrand2: #d8d8d8;
