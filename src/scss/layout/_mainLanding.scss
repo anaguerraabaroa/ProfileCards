@@ -51,4 +51,20 @@
       color: $colorSecondary;
     }
   }
+
+  &__link {
+    width: 129px;
+    background-color: $colorPal1Medium;
+    padding: 10px 20px 10px 20px;
+    border-radius: 21px;
+    margin-bottom: 30px;
+
+    &--text {
+      text-decoration: none;
+      color: $colorWhite;
+      text-transform: uppercase;
+      font-family: $fontPrimary;
+      font-size: 16px;
+    }
+  }
 }
