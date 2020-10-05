@@ -3,38 +3,209 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
+    <title>Crea tu propia tarjeta de visita</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/3cd653d2b1.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-
   <body>
-    <div class="page">
-      
-      <main>
-        <p>
-          Esta es otra segunda página del Starter kit. Mira el fichero
-          <code class="code">./src/html/partials/main.html</code> para cómo
-          hemos creado el enlace que te ha traído hasta aquí.
-        </p>
-      </main>
-      <footer class="footer" role="contentinfo">
-        <!-- Queda pendiente decidir el nombre del grupo, cuando lo tengamos se modifica -->
-        <small class="footer__small"> &copy; Nombre del grupo 2020 </small>
-        <a href="./profileCards.html" title="Ir a crear tu tarjeta de visita">
+    <header class="header" role="banner">
+      <div>
+        <a href="./assets/index.html">
           <img
-            class="footer__logo"
-            src="./assets/images/logo-adalab.png"
-            alt="Logo del grupo"
-            title="Logo del grupo"
+            src="./assets/images/logo-awesome-profile-cards.svg"
+            alt="Logo crea tu propia tarjeta de visita"
+            title="Vuelve a la página de bienvenida"
           />
         </a>
-      </footer>
+      </div>
+    </header>
 
-    </div>
+    <main class="mainProfileCards" role="main">
+      <section class="mainCard">
+        <button class="mainCard__button" type="reset" value="Reset">
+          <i class="far fa-trash-alt" aria-hidden="true"></i>
+          Reset
+        </button>
+        <article class="mainCard__wrapper">
+          <h1 class="mainCard__wrapper--name">Nombre apellido</h1>
+          <h2 class="mainCard__wrapper--position">Front-end developer</h2>
+          <img
+            class="mainCard__wrapper--img"
+            src=""
+            alt="Imagen por defecto"
+            title="Aquí tu foto"
+          />
+          <nav>
+            <ul class="mainCard__wrapper--list">
+              <li class="socialLink">
+                <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+              </li>
+              <li class="socialLink">
+                <i class="far fa-envelope" aria-hidden="true"></i>
+              </li>
+              <li class="socialLink">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              </li>
+              <li class="socialLink">
+                <i class="fab fa-github-alt" aria-hidden="true"></i>
+              </li>
+            </ul>
+          </nav>
+        </article>
+      </section>
+
+      <section class="mainOptions">
+        <div>
+          <div class="mainMenu">
+            <span class="mainMenu__icon"
+              ><i class="far fa-object-ungroup" aria-hidden="true"></i
+            ></span>
+            <h3 class="mainMenu__title">Diseña</h3>
+            <button class="mainMenu__button">
+              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-chevron-up"></i>
+            </button>
+          </div>
+          <div class="mainCollapsable">
+            <h4 class="mainCollapsable__title">Colores</h4>
+            <div class="mainCollasable__palette">
+              <label for="palette1">
+                <input id="palette1" type="radio" value="palette1" name="palette" />
+                <span class="palette1Color1"></span>
+                <span class="palette1Color2"></span>
+                <span class="palette1Color3"></span>
+              </label>
+              <label for="palette2">
+                <input id="palette2" type="radio" value="palette2" name="palette" />
+                <span class="palette2Color1"></span>
+                <span class="palette2Color2"></span>
+                <span class="palette2Color3"></span>
+              </label>
+              <label for="palette3">
+                <input id="palette3" type="radio" value="palette3" name="palette" />
+                <span class="palette3Color1"></span>
+                <span class="palette3Color2"></span>
+                <span class="palette3Color3"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="mainMenu">
+            <span class="mainMenu__icon"
+              ><i class="far fa-keyboard" aria-hidden="true"></i
+            ></span>
+            <h3 class="mainMenu__title">Rellena</h3>
+            <button class="mainMenu__button">
+              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-chevron-up"></i>
+            </button>
+          </div>
+          <!-- Revisar cómo enlazar el formulario con JavaScript -->
+          <form action="" method="POST">
+            <label for="fullName">Nombre completo</label>
+            <input
+              id="fullName"
+              type="text"
+              name="fullName"
+              placeholder="Ej.: Jack Skellington"
+            />
+            <label for="position">Puesto</label>
+            <input
+              id="position"
+              type="text"
+              name="position"
+              placeholder="Ej.: Halloween guardian"
+            />
+            <!-- Revisar cómo dar estilos con JavaScript -->
+            <label for="img">Imagen de perfil</label>
+            <input
+              id="img"
+              type="file"
+              name="img"
+              placeholder="Ej.: Halloween guardian"
+            />
+            <label for="emailAddress">Email</label>
+            <input
+              id="emailAddress"
+              type="email"
+              name="emailAddress"
+              placeholder="Ej.: jack.skellington@gmail.com"
+            />
+            <label for="telephone">Teléfono</label>
+            <input
+              id="telephone"
+              type="tel"
+              name="telephone"
+              placeholder="Ej.: 666-66-66-66"
+            />
+
+            <label for="linkedin">LinkedIn</label>
+            <input
+              id="linkedin"
+              type="text"
+              name="linkedin"
+              placeholder="Ej.: linkedin.com/jackSkellington"
+            />
+            <label for="github">GitHub</label>
+            <input
+              id="github"
+              type="text"
+              name="github"
+              placeholder="Ej.: @jack.skellington"
+            />
+          </form>
+        </div>
+
+        <div>
+          <div class="mainMenu">
+            <span class="mainMenu__icon"
+              ><i class="fas fa-share-alt" aria-hidden="true"></i>
+            </span>
+            <h3 class="mainMenu__title">Comparte</h3>
+            <button class="mainMenu__button">
+              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-chevron-up"></i>
+            </button>
+          </div>
+          <button class="mainButton">
+            <i class="far fa-address-card" aria-hidden="true">Crear tarjeta</i>
+          </button>
+          <div class="createLink">
+            <p>La tarjeta ha sido creada:</p>
+            <span></span>
+            <a class="createLink__twitterLink" href="">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+              Compartir en Twitter
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <!-- Queda pendiente decidir el nombre del grupo, cuando lo tengamos se modifica -->
+      <small class="footer__small"> &copy; Nombre del grupo 2020 </small>
+      <a href="./profileCards.html" title="Ir a crear tu tarjeta de visita">
+        <img
+          class="footer__logo"
+          src="./assets/images/logo-adalab.png"
+          alt="Logo del grupo"
+          title="Logo del grupo"
+        />
+      </a>
+    </footer>
+
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
