@@ -20,6 +20,10 @@
   .footer {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 40px 10px 41px;
+  }
+  &__small {
+    margin-bottom: 0;
   }
 }
