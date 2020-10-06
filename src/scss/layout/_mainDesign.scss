@@ -1,0 +1,58 @@
+.mainMenu {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainMenu__icon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: $colorPrimary;
+}
+
+.mainMenu__title {
+  margin-right: 168px;
+  font-family: $fontPrimary;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: normal;
+  color: $colorSecondary;
+  text-transform: uppercase;
+}
+
+.mainMenu__button {
+  font-size: 18px;
+  font-weight: normal;
+  background-color: transparent;
+  border: none;
+  color: $colorSecondary;
+}
+
+.fa-chevron-down {
+  visibility: hidden;
+}
+
+.mainCollapsable {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainCollapsable__title {
+  margin: 22px 82px 132px 19px;
+  font-size: 14px;
+  color: $colorSecondary;
+  font-family: $fontPrimary;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.mainCollasable__palette {
+  margin: 35px 10px 34px 82px;
+  display: flex;
+  flex-direction: column;
+}
+
+.paletteRadio {
+  margin-bottom: 28px;
+}
+.palette1Color1 {
+  background-color: $colorPal1Dark;
+}
