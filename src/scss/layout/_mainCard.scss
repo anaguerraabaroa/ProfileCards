@@ -1,4 +1,83 @@
 .mainCard {
   background: linear-gradient(to bottom, $colorBrand4, $colorBrand5);
   padding: 38px 35px 40px 45px;
+
+  &__button {
+    height: 30px;
+    width: 75px;
+    border: 1px solid $colorWhite;
+    background: transparent;
+    border-radius: 15px;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $colorSecondary;
+
+    &--trashBin {
+      padding-right: 3px;
+    }
+  }
+
+  &__wrapper {
+    background-color: $colorWhite;
+    margin-top: 20px;
+    padding-top: 21px;
+    font-family: $fontSecondary;
+    line-height: 20px;
+
+    &--name {
+      text-transform: capitalize;
+      font-size: 18px;
+      color: $colorPal1Dark;
+      font-weight: 700;
+      padding: 0px 0 4px 20px;
+      border-left: 5px solid $colorPal1Medium;
+    }
+    &--position {
+      color: $colorSecondary;
+      font-size: 16px;
+      padding: 0px 0px 0px 20px;
+      border-left: 5px solid $colorPal1Medium;
+    }
+    // --------- PROFILE (IMAGE) START ----------
+    .profile {
+      margin: 10px auto;
+      display: flex;
+      justify-content: center;
+
+      &__image {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid #ccc;
+        width: 300px;
+        height: 300px;
+      }
+    }
+    // --------- PROFILE (IMAGE) END ----------
+
+    &--list {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      list-style-type: none;
+      margin-left: 20px;
+
+      .socialLink {
+        border: 2px solid $colorPal1MLight;
+        border-radius: 50px;
+        font-size: 18px;
+        color: $colorPal1Dark;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /*  padding: 0 10px 12px 10px; */
+        margin: 0px 5px 12px 5px;
+      }
+    }
+  }
 }
