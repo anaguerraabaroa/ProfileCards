@@ -10,13 +10,13 @@
 }
 
 .mainMenu__title {
-  margin-right: 168px;
   font-family: $fontPrimary;
   font-weight: 600;
   font-size: 18px;
   line-height: normal;
   color: $colorSecondary;
   text-transform: uppercase;
+  margin-right: 168px;
 }
 
 .mainMenu__button {
@@ -27,13 +27,10 @@
   color: $colorSecondary;
 }
 
-.fa-chevron-down {
-  visibility: hidden;
-}
-
 .mainCollapsable {
   display: flex;
   flex-direction: row;
+  border-bottom: 1px solid $colorBrand2;
 }
 
 .mainCollapsable__title {

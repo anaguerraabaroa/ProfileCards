@@ -1,70 +1,77 @@
 <div>
-  <div class="mainMenu">
+  <div class="mainMenu mainMenuForm">
     <span class="mainMenu__icon"
       ><i class="far fa-keyboard" aria-hidden="true"></i
     ></span>
-    <h3 class="mainMenu__title">Rellena</h3>
+    <h3 class="mainMenu__title mainMenuForm__title">Rellena</h3>
     <button class="mainMenu__button">
-      <i class="fas fa-chevron-down"></i>
+      <!-- <i class="fas fa-chevron-down"></i> -->
       <i class="fas fa-chevron-up"></i>
     </button>
   </div>
   <!-- Revisar cómo enlazar el formulario con JavaScript -->
-  <form action="" method="POST">
-    <label for="fullName">Nombre completo</label>
+  <form class="form" action="" method="POST">
+    <label class="label" for="fullName">Nombre completo</label>
     <input
+      class="input"
       id="fullName"
       type="text"
       name="fullName"
       placeholder="Ej.: Jack Skellington"
     />
-    <label for="position">Puesto</label>
+    <label class="label" for="position">Puesto</label>
     <input
+      class="input"
       id="position"
       type="text"
       name="position"
       placeholder="Ej.: Halloween guardian"
     />
-    <!-- Revisar cómo dar estilos con JavaScript -->
-    <label for="img">Imagen de perfil</label>
-    <div class="action">
-      <button class="action__upload-btn js__profile-trigger" type="button">
-        Añadir imagen
-      </button>
-      <input
-        type="file"
-        name=""
-        id="img-selector"
-        class="action__hiddenField js__profile-upload-btn"
-      />
+    <label class="label labelImage" for="img">Imagen de perfil</label>
+    <div class="wrapperImage">
+      <div class="action">
+        <button class="action__upload-btn js__profile-trigger" type="button">
+          Añadir imagen
+        </button>
+        <input
+          type="file"
+          name=""
+          id="img-selector"
+          class="action__hiddenField js__profile-upload-btn"
+        />
+      </div>
+      <div class="profile">
+        <div class="profile__preview js__profile-preview"></div>
+      </div>
     </div>
-    <div class="profile">
-      <div class="profile__preview js__profile-preview"></div>
-    </div>
-    <label for="emailAddress">Email</label>
+    <label class="label" for="emailAddress">Email</label>
     <input
+      class="input"
       id="emailAddress"
       type="email"
       name="emailAddress"
       placeholder="Ej.: jack.skellington@gmail.com"
     />
-    <label for="telephone">Teléfono</label>
+    <label class="label" for="telephone">Teléfono</label>
     <input
+      class="input"
       id="telephone"
       type="tel"
       name="telephone"
       placeholder="Ej.: 666-66-66-66"
     />
 
-    <label for="linkedin">LinkedIn</label>
+    <label class="label" for="linkedin">LinkedIn</label>
     <input
+      class="input"
       id="linkedin"
       type="text"
       name="linkedin"
       placeholder="Ej.: linkedin.com/jackSkellington"
     />
-    <label for="github">GitHub</label>
+    <label class="label" for="github">GitHub</label>
     <input
+      class="input"
       id="github"
       type="text"
       name="github"

@@ -1,18 +1,59 @@
-.action {
-  text-align: center;
-  margin: 30px;
+.form {
+  padding: 28px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $colorBrand2;
 }
+
+.mainMenuForm {
+  padding-top: 10px;
+}
+
+.mainMenuForm__title {
+  margin-right: 155px;
+}
+
+.label {
+  font-family: $fontPrimary;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.43;
+  color: $colorPal1Dark;
+  margin-bottom: 7px;
+}
+.labelImage {
+  margin-top: -2px;
+}
+.input {
+  width: 281px;
+  height: 30px;
+  border: solid 1px $colorPal1MLight;
+  margin-bottom: 20px;
+}
+
+.input[placeholder] {
+  padding: 3px 0 7px 9px;
+  color: $colorBrand6;
+}
+
+.wrapperImage {
+  display: flex;
+  flex-direction: row;
+}
+
 .action__upload-btn {
-  background: deeppink;
-  border-radius: 15px;
-  border: 0;
-  box-shadow: 0 0 5px rgba(#000, 0.3);
+  width: 145px;
+  height: 30px;
+  border-radius: 3px;
+  background: $colorPrimary;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
   box-sizing: border-box;
-  color: #fff;
-  font-family: sans-serif;
-  font-size: 20px;
-  padding: 10px 20px;
-  width: 250px;
+  color: $colorWhite;
+  font-family: $fontPrimary;
+  font-size: 14px;
+  padding: 3px 22px 7px 22px;
+  border: none;
+  margin-bottom: 20px;
 }
 .action__hiddenField {
   /* Ocultamos el input de tipo "file" porque no podemos 
@@ -20,25 +61,16 @@
   display: none;
 }
 
-.profile {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
 .profile__image,
 .profile__preview {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid #ccc;
-}
-.profile__image {
-  width: 300px;
-  height: 300px;
 }
 
 .profile__preview {
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  border: solid 1px $colorPal1MLight;
 }
