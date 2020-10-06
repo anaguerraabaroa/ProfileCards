@@ -27,12 +27,26 @@
     />
     <!-- Revisar cómo dar estilos con JavaScript -->
     <label for="img">Imagen de perfil</label>
-    <input
-      id="img"
-      type="file"
-      name="img"
-      placeholder="Ej.: Halloween guardian"
-    />
+    <div class="action">
+      <button class="action__upload-btn js__profile-trigger" type="button">
+        Añadir imagen
+      </button>
+      <input
+        type="file"
+        name=""
+        id="img-selector"
+        class="action__hiddenField js__profile-upload-btn"
+      />
+    </div>
+    <div class="profile">
+      <div
+        class="profile__image js__profile-image"
+        style="
+          background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+        "
+      ></div>
+      <div class="profile__preview js__profile-preview"></div>
+    </div>
     <label for="emailAddress">Email</label>
     <input
       id="emailAddress"
