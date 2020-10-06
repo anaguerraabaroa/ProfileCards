@@ -1,5 +1,11 @@
-// .page__header {
-//   display: flex;
-//   justify-content: space-evenly;
-//   margin-bottom: 3rem;
-// }
+.header {
+  margin: 31px 79px 30px 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+
+  &__image {
+    width: 201px;
+  }
+}
