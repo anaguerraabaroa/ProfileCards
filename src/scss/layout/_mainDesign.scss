@@ -1,50 +1,50 @@
 .mainMenu {
   display: flex;
   flex-direction: row;
-}
 
-.mainMenu__icon {
-  margin-right: 10px;
-  font-size: 18px;
-  color: $colorPrimary;
-}
+  &__icon {
+    margin-right: 10px;
+    font-size: 18px;
+    color: $colorPrimary;
+  }
+  &__title {
+    font-family: $fontPrimary;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: normal;
+    color: $colorSecondary;
+    text-transform: uppercase;
+    margin-right: 168px;
+  }
 
-.mainMenu__title {
-  font-family: $fontPrimary;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: normal;
-  color: $colorSecondary;
-  text-transform: uppercase;
-  margin-right: 168px;
-}
-
-.mainMenu__button {
-  font-size: 18px;
-  font-weight: normal;
-  background-color: transparent;
-  border: none;
-  color: $colorSecondary;
+  &__button {
+    font-size: 18px;
+    font-weight: normal;
+    background-color: transparent;
+    border: none;
+    color: $colorSecondary;
+  }
 }
 
 .mainCollapsable {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid $colorBrand2;
+
+  &__title {
+    margin: 22px 82px 132px 19px;
+    font-size: 14px;
+    color: $colorSecondary;
+    font-family: $fontPrimary;
+    line-height: normal;
+    text-transform: uppercase;
+  }
 }
 
-.mainCollapsable__title {
-  margin: 22px 82px 132px 19px;
-  font-size: 14px;
-  color: $colorSecondary;
-  font-family: $fontPrimary;
-  line-height: normal;
-  text-transform: uppercase;
-}
 .mainCollasable__palette {
-  margin: 35px 10px 34px 82px;
   display: flex;
   flex-direction: column;
+  margin: 35px 10px 34px 82px;
 }
 
 .paletteRadio {

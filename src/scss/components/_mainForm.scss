@@ -1,39 +1,39 @@
+.mainMenuForm {
+  padding-top: 10px;
+
+  &__title {
+    margin-right: 155px;
+  }
+}
 .form {
   padding: 28px 0 30px 0;
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid $colorBrand2;
+
+  &__label {
+    font-family: $fontPrimary;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.43;
+    color: $colorPal1Dark;
+    margin-bottom: 7px;
+  }
+  &__input {
+    width: 281px;
+    height: 30px;
+    border: solid 1px $colorPal1MLight;
+    margin-bottom: 20px;
+
+    &[placeholder] {
+      padding: 3px 0 7px 9px;
+      color: $colorBrand6;
+    }
+  }
 }
 
-.mainMenuForm {
-  padding-top: 10px;
-}
-
-.mainMenuForm__title {
-  margin-right: 155px;
-}
-
-.label {
-  font-family: $fontPrimary;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.43;
-  color: $colorPal1Dark;
-  margin-bottom: 7px;
-}
 .labelImage {
   margin-top: -2px;
-}
-.input {
-  width: 281px;
-  height: 30px;
-  border: solid 1px $colorPal1MLight;
-  margin-bottom: 20px;
-}
-
-.input[placeholder] {
-  padding: 3px 0 7px 9px;
-  color: $colorBrand6;
 }
 
 .wrapperImage {
@@ -61,16 +61,12 @@
   display: none;
 }
 
-.profile__image,
-.profile__preview {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .profile__preview {
   width: 30px;
   height: 30px;
   margin-left: 20px;
   border: solid 1px $colorPal1MLight;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
