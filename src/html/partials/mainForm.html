@@ -18,6 +18,7 @@
       type="text"
       name="fullName"
       placeholder="Ej.: Jack Skellington"
+      required
     />
     <label class="form__label" for="position">Puesto</label>
     <input
@@ -26,23 +27,21 @@
       type="text"
       name="position"
       placeholder="Ej.: Halloween guardian"
+      required
     />
-    <label class="form__label labelImage" for="img">Imagen de perfil</label>
-    <div class="wrapperImage">
-      <div class="action">
-        <button class="action__upload-btn js__profile-trigger" type="button">
-          Añadir imagen
-        </button>
-        <input
-          type="file"
-          name=""
-          id="img-selector"
-          class="action__hiddenField js__profile-upload-btn"
-        />
-      </div>
-      <div class="profile">
-        <div class="profile__preview js__profile-preview"></div>
-      </div>
+    <!-- Revisar cómo dar estilos con JavaScript -->
+    <label for="img">Imagen de perfil</label>
+    <div class="action">
+      <button class="action__upload-btn js__profile-trigger" type="button">
+        Añadir imagen
+      </button>
+      <input
+        type="file"
+        name=""
+        id="img-selector"
+        class="action__hiddenField js__profile-upload-btn"
+        required
+      />
     </div>
     <label class="form__label" for="emailAddress">Email</label>
     <input
@@ -51,6 +50,7 @@
       type="email"
       name="emailAddress"
       placeholder="Ej.: jack.skellington@gmail.com"
+      required
     />
     <label class="form__label" for="telephone">Teléfono</label>
     <input
@@ -59,6 +59,7 @@
       type="tel"
       name="telephone"
       placeholder="Ej.: 666-66-66-66"
+      required
     />
 
     <label class="form__label" for="linkedin">LinkedIn</label>
@@ -68,6 +69,7 @@
       type="text"
       name="linkedin"
       placeholder="Ej.: linkedin.com/jackSkellington"
+      required
     />
     <label class="form__label" for="github">GitHub</label>
     <input
@@ -76,6 +78,7 @@
       type="text"
       name="github"
       placeholder="Ej.: @jack.skellington"
+      required
     />
   </form>
 </div>
