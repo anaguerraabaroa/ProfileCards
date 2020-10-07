@@ -30,18 +30,22 @@
       required
     />
     <!-- Revisar cómo dar estilos con JavaScript -->
-    <label for="img">Imagen de perfil</label>
-    <div class="action">
-      <button class="action__upload-btn js__profile-trigger" type="button">
-        Añadir imagen
-      </button>
-      <input
-        type="file"
-        name=""
-        id="img-selector"
-        class="action__hiddenField js__profile-upload-btn"
-        required
-      />
+    <label class="form__label labelImage" for="img">Imagen de perfil</label>
+    <div class="wrapperImage">
+      <div class="action">
+        <button class="action__upload-btn js__profile-trigger" type="button">
+          Añadir imagen
+        </button>
+        <input
+          type="file"
+          name=""
+          id="img-selector"
+          class="action__hiddenField js__profile-upload-btn"
+        />
+      </div>
+      <div class="profile">
+        <div class="profile__preview js__profile-preview"></div>
+      </div>
     </div>
     <label class="form__label" for="emailAddress">Email</label>
     <input
