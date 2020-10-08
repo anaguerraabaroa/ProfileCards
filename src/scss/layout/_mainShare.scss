@@ -5,3 +5,18 @@
 .mainMenuShare__title {
   margin-right: 137px;
 }
+
+.mainButton {
+  width: 199px;
+  height: 50px;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  background-color: $colorPrimary;
+  color: $colorWhite;
+  font-family: $fontPrimary;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 30px;
+  margin-left: 61px;
+}
