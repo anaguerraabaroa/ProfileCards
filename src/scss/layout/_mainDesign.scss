@@ -38,7 +38,6 @@
     font-family: $fontPrimary;
     line-height: normal;
     text-transform: uppercase;
-    background: blue;
   }
 }
 
@@ -46,7 +45,6 @@
   display: flex;
   flex-direction: column;
   margin: 35px 10px 34px 82px;
-  background: pink;
 }
 
 .paletteRadio {
@@ -61,18 +59,62 @@
     background-color: $colorPal1Dark;
     width: 30px;
     height: 25px;
-    margin-top: 79px;
+    margin-top: -7px;
   }
   &__color2 {
     background-color: $colorPal1Medium;
     width: 30px;
     height: 25px;
-    margin-top: 79px;
+    margin-top: -7px;
   }
   &__color3 {
     background-color: $colorPal1Light;
     width: 30px;
     height: 25px;
-    margin-top: 79px;
+    margin-top: -7px;
+  }
+}
+.palette2 {
+  display: flex;
+  flex-direction: row;
+  &__color1 {
+    background-color: $colorPal2Dark;
+    width: 30px;
+    height: 25px;
+    margin-top: -7px;
+  }
+  &__color2 {
+    background-color: $colorPal2Medium;
+    width: 30px;
+    height: 25px;
+    margin-top: -7px;
+  }
+  &__color3 {
+    background-color: $colorPal2Light;
+    width: 30px;
+    height: 25px;
+    margin-top: -7px;
+  }
+}
+.palette3 {
+  display: flex;
+  flex-direction: row;
+  &__color1 {
+    background-color: $colorPal3Dark;
+    width: 30px;
+    height: 25px;
+    margin-top: -7px;
+  }
+  &__color2 {
+    background-color: $colorPal3Medium;
+    width: 30px;
+    height: 25px;
+    margin-top: -7px;
+  }
+  &__color3 {
+    background-color: $colorPal3Light;
+    width: 30px;
+    height: 25px;
+    margin-top: -7px;
   }
 }
