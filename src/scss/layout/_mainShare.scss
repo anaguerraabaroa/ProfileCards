@@ -17,10 +17,13 @@
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
-  margin-top: 30px;
-  margin-left: 41px;
-  margin-bottom: 30px;
+  margin: 30px 40px 30px 41px;
+  padding: auto;
   text-transform: uppercase;
+}
+
+.fa-address-card {
+  margin-right: 5px;
 }
 
 .createLink {
@@ -51,8 +54,9 @@
     margin: 0 -7px 13px -5px;
   }
   &__twitterButton {
-    width: 164px;
-    height: 20px;
+    width: 181px;
+    height: 30px;
+    padding: 3px 9px 7px 10.5px;
     border-radius: 3px;
     font-family: $fontPrimary;
     font-size: 14px;
@@ -62,8 +66,4 @@
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
     margin: 10px 39px 30px 30px;
   }
-}
-
-.fa-address-card {
-  margin-right: 5px;
 }

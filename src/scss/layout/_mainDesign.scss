@@ -54,15 +54,22 @@
     margin: 31px 0 30px 0;
     display: flex;
     flex-direction: column;
-    // @media all and (min-width: 768px) {
-    //   margin-left: 135px;
-    // }
   }
 }
 
 .paletteRadio {
   margin-bottom: 28px;
   margin-right: 10px;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  transition: 0.2s;
+}
+
+.paletteRadio:checked {
+  appearance: none;
+  border: 6px solid $colorBrand7;
+  outline: none;
 }
 
 .palette1 {
@@ -72,19 +79,19 @@
     background-color: $colorPal1Dark;
     width: 30px;
     height: 25px;
-    margin-top: -7px;
+    margin-top: -4px;
   }
   &__color2 {
     background-color: $colorPal1Medium;
     width: 30px;
     height: 25px;
-    margin-top: -7px;
+    margin-top: -4px;
   }
   &__color3 {
     background-color: $colorPal1Light;
     width: 30px;
     height: 25px;
-    margin-top: -7px;
+    margin-top: -4px;
   }
 }
 .palette2 {
@@ -94,19 +101,19 @@
     background-color: $colorPal2Dark;
     width: 30px;
     height: 25px;
-    margin-top: -7px;
+    margin-top: -4px;
   }
   &__color2 {
     background-color: $colorPal2Medium;
     width: 30px;
     height: 25px;
-    margin-top: -7px;
+    margin-top: -4px;
   }
   &__color3 {
     background-color: $colorPal2Light;
     width: 30px;
     height: 25px;
-    margin-top: -7px;
+    margin-top: -4px;
   }
 }
 .palette3 {
@@ -116,18 +123,40 @@
     background-color: $colorPal3Dark;
     width: 30px;
     height: 25px;
-    margin-top: -7px;
+    margin-top: -4px;
   }
   &__color2 {
     background-color: $colorPal3Medium;
     width: 30px;
     height: 25px;
-    margin-top: -7px;
+    margin-top: -4px;
   }
   &__color3 {
     background-color: $colorPal3Light;
     width: 30px;
     height: 25px;
-    margin-top: -7px;
+    margin-top: -4px;
   }
 }
+
+// .palettehalloween {
+//   display: flex;
+//   flex-direction: row;
+//   &__color1 {
+//     background-color: $colorPalHwDark;
+//     width: 30px;
+//     height: 25px;
+//     margin-top: -7px;
+//   }
+//   &__color2 {
+//     background-color: $colorPalHwMedium;
+//     width: 30px;
+//     height: 25px;
+//     margin-top: -7px;
+//   }
+//   &__color3 {
+//     background-color: $colorPalHwLight;
+//     width: 30px;
+//     height: 25px;
+//     margin-top: -7px;
+//   }
