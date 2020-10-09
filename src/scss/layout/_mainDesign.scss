@@ -1,28 +1,38 @@
 .mainMenu {
   display: flex;
   flex-direction: row;
+}
 
-  &__icon {
-    margin-right: 10px;
-    font-size: 18px;
-    color: $colorPrimary;
+&__icon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: $colorPrimary;
+  @media all and (min-width: 768px) {
+    margin: 10px 10px 25px 0;
   }
-  &__title {
-    font-family: $fontPrimary;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: normal;
-    color: $colorSecondary;
-    text-transform: uppercase;
-    margin-right: 168px;
-  }
+}
 
-  &__button {
-    font-size: 18px;
-    font-weight: normal;
-    background-color: transparent;
-    border: none;
-    color: $colorSecondary;
+&__title {
+  font-family: $fontPrimary;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: normal;
+  color: $colorSecondary;
+  text-transform: uppercase;
+  margin-right: 168px;
+  @media all and (min-width: 768px) {
+    margin: 7px 217px 22px 0;
+  }
+}
+
+&__button {
+  font-size: 18px;
+  font-weight: normal;
+  background-color: transparent;
+  border: none;
+  color: $colorSecondary;
+  @media all and (min-width: 768px) {
+    margin-top: -20px;
   }
 }
 
@@ -32,18 +42,24 @@
   border-bottom: 1px solid $colorBrand2;
 
   &__title {
-    margin: 22px 0 132px 19px;
+    margin: 0 0 132px 19px;
     font-size: 14px;
     color: $colorSecondary;
     font-family: $fontPrimary;
     line-height: normal;
     text-transform: uppercase;
+    @media all and (min-width: 768px) {
+    }
   }
 
   &__palette {
     display: flex;
     flex-direction: column;
-    margin: 35px 10px 34px 82px;
+    margin: 31px 0 30px 82px;
+    background-color: red;
+    @media all and (min-width: 768px) {
+      margin-left: 135px;
+    }
   }
 }
 

@@ -1,9 +1,9 @@
 .mainMenuShare {
   padding-top: 10px;
-}
 
-.mainMenuShare__title {
-  margin-right: 137px;
+  &__title {
+    margin-right: 137px;
+  }
 }
 
 .mainButton {
@@ -18,5 +18,52 @@
   font-weight: 600;
   line-height: normal;
   margin-top: 30px;
-  margin-left: 61px;
+  margin-left: 41px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.createLink {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border-top: 1px solid $colorBrand2;
+  border-bottom: 1px solid $colorBrand2;
+  margin-bottom: 30px;
+
+  &__title {
+    font-family: $fontPrimary;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 30px 5px 31px;
+    width: 320px;
+    height: 24px;
+    line-height: normal;
+  }
+
+  &__twitterLink {
+    font-family: $fontPrimary;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    color: $colorPrimary;
+    margin: 0 -7px 13px -5px;
+  }
+  &__twitterButton {
+    width: 164px;
+    height: 20px;
+    border-radius: 3px;
+    font-family: $fontPrimary;
+    font-size: 14px;
+    text-decoration: none;
+    color: $colorWhite;
+    background-color: $colorBrand7;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    margin: 10px 39px 30px 30px;
+  }
+}
+
+.fa-address-card {
+  margin-right: 5px;
 }
