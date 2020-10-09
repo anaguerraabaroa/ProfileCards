@@ -39,12 +39,12 @@
     line-height: normal;
     text-transform: uppercase;
   }
-}
 
-.mainCollapsable__palette {
-  display: flex;
-  flex-direction: column;
-  margin: 35px 10px 34px 82px;
+  &__palette {
+    display: flex;
+    flex-direction: column;
+    margin: 35px 10px 34px 82px;
+  }
 }
 
 .paletteRadio {
