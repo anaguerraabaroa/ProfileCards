@@ -15,6 +15,8 @@
 .mainButton {
   width: 199px;
   height: 50px;
+  padding: auto;
+  margin: 30px 40px 30px 41px;
   border-radius: 12px;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
   background-color: $colorPrimary;
@@ -23,11 +25,9 @@
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
-  margin: 30px 40px 30px 41px;
-  padding: auto;
   text-transform: uppercase;
   @media all and (min-width: 768px) {
-    margin: 33px 95px 30px 65px;
+    margin: 33px 65px 30px 65px;
   }
 }
 
@@ -41,6 +41,9 @@
   border-top: 1px solid $colorBrand2;
   border-bottom: 1px solid $colorBrand2;
   margin-bottom: 30px;
+  @media all and (min-width: 768px) {
+    margin-bottom: 446px;
+  }
 
   &__title {
     font-family: $fontPrimary;
@@ -51,7 +54,7 @@
     height: 24px;
     line-height: normal;
     @media all and (min-width: 768px) {
-      margin: 20px 85px 5px 55px;
+      margin: 20px 55px 5px 55px;
     }
   }
 
@@ -63,7 +66,7 @@
     color: $colorPrimary;
     margin: 0 -7px 10px -5px;
     @media all and (min-width: 768px) {
-      margin: 0 8px 10px 19px;
+      margin: 0 18px 10px 19px;
     }
   }
   &__twitterButton {
@@ -79,7 +82,7 @@
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
     margin: 0 49px 30px 50px;
     @media all and (min-width: 768px) {
-      margin: 0 64px 30px 74px;
+      margin: 0 74px 30px 74px;
     }
   }
 }
