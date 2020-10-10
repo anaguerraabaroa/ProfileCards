@@ -30,6 +30,9 @@
     background-color: transparent;
     border: none;
     color: $colorSecondary;
+    @media all and (min-width: 768px) {
+      margin-top: 10px;
+    }
   }
 }
 
