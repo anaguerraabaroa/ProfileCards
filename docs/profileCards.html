@@ -19,6 +19,7 @@
       <div>
         <a href="./assets/index.html">
           <img
+            class="header__image"
             src="./assets/images/logo-awesome-profile-cards.svg"
             alt="Logo crea tu propia tarjeta de visita"
             title="Vuelve a la página de bienvenida"
@@ -29,163 +30,233 @@
 
     <main class="mainProfileCards" role="main">
       <section class="mainCard">
-        <button class="mainCard__button" type="reset" value="Reset">
-          <i class="far fa-trash-alt" aria-hidden="true"></i>
-          Reset
-        </button>
-        <article class="mainCard__wrapper">
-          <h1 class="mainCard__wrapper--name">Nombre apellido</h1>
-          <h2 class="mainCard__wrapper--position">Front-end developer</h2>
-          <img
-            class="mainCard__wrapper--img"
-            src=""
-            alt="Imagen por defecto"
-            title="Aquí tu foto"
-          />
-          <nav>
-            <ul class="mainCard__wrapper--list">
-              <li class="socialLink">
-                <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-              </li>
-              <li class="socialLink">
-                <i class="far fa-envelope" aria-hidden="true"></i>
-              </li>
-              <li class="socialLink">
-                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-              </li>
-              <li class="socialLink">
-                <i class="fab fa-github-alt" aria-hidden="true"></i>
-              </li>
-            </ul>
-          </nav>
-        </article>
+        <div class="resetImage">
+          <button class="mainCard__button" type="reset" value="Reset">
+            <i
+              class="far fa-trash-alt mainCard__button--trashBin"
+              aria-hidden="true"
+            ></i>
+            Reset
+          </button>
+          <article class="mainCard__wrapper">
+            <h1 class="mainCard__wrapper--name">Nombre apellido</h1>
+            <h2 class="mainCard__wrapper--position">Front-end developer</h2>
+            <div class="profile">
+              <div
+                class="profile__image js__profile-image"
+                style="
+                  background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+                "
+              ></div>
+              <!-- <div class="profile__preview js__profile-preview"></div> -->
+            </div>
+            <nav>
+              <ul class="mainCard__wrapper--list">
+                <li class="socialLink">
+                  <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                </li>
+                <li class="socialLink">
+                  <i class="far fa-envelope" aria-hidden="true"></i>
+                </li>
+                <li class="socialLink">
+                  <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </li>
+                <li class="socialLink">
+                  <i class="fab fa-github-alt" aria-hidden="true"></i>
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </div>
       </section>
 
       <section class="mainOptions">
         <div>
           <div class="mainMenu">
-            <span class="mainMenu__icon"
-              ><i class="far fa-object-ungroup" aria-hidden="true"></i
-            ></span>
-            <h3 class="mainMenu__title">Diseña</h3>
+            <div class="mainMenu__iconTitle">
+              <span class="mainMenu__iconTitle--icon"
+                ><i class="far fa-object-ungroup" aria-hidden="true"></i
+              ></span>
+              <h3 class="mainMenu__iconTitle--title">Diseña</h3>
+            </div>
             <button class="mainMenu__button">
-              <i class="fas fa-chevron-down"></i>
+              <!-- <i class="fas fa-chevron-down"></i> -->
               <i class="fas fa-chevron-up"></i>
             </button>
           </div>
           <div class="mainCollapsable">
             <h4 class="mainCollapsable__title">Colores</h4>
-            <div class="mainCollasable__palette">
-              <label for="palette1">
-                <input id="palette1" type="radio" value="palette1" name="palette" />
-                <span class="palette1Color1"></span>
-                <span class="palette1Color2"></span>
-                <span class="palette1Color3"></span>
+            <div class="mainCollapsable__palette">
+              <label for="palette1" class="palette1">
+                <input
+                  class="paletteRadio"
+                  id="palette1"
+                  type="radio"
+                  value="palette1"
+                  name="palette"
+                />
+                <div class="palette1__color1"></div>
+                <div class="palette1__color2"></div>
+                <div class="palette1__color3"></div>
               </label>
-              <label for="palette2">
-                <input id="palette2" type="radio" value="palette2" name="palette" />
-                <span class="palette2Color1"></span>
-                <span class="palette2Color2"></span>
-                <span class="palette2Color3"></span>
+              <label for="palette2" class="palette2">
+                <input
+                  class="paletteRadio"
+                  id="palette2"
+                  type="radio"
+                  value="palette2"
+                  name="palette"
+                />
+                <div class="palette2__color1"></div>
+                <div class="palette2__color2"></div>
+                <div class="palette2__color3"></div>
               </label>
-              <label for="palette3">
-                <input id="palette3" type="radio" value="palette3" name="palette" />
-                <span class="palette3Color1"></span>
-                <span class="palette3Color2"></span>
-                <span class="palette3Color3"></span>
+              <label for="palette3" class="palette3">
+                <input
+                  class="paletteRadio"
+                  id="palette3"
+                  type="radio"
+                  value="palette3"
+                  name="palette"
+                />
+                <div class="palette3__color1"></div>
+                <div class="palette3__color2"></div>
+                <div class="palette3__color3"></div>
               </label>
+              <!-- Comentar con Dayana si podemos incluir una paleta temática de Halloween
+              <label for="halloween" class="palettehalloween">
+                <input
+                  class="paletteRadio"
+                  id="halloween"
+                  type="radio"
+                  value="halloween"
+                  name="halloween" **Cambiar el name por palette cuando vayamos a publicar la paleta**
+                />
+                <div class="palettehalloween__color1"></div>
+                <div class="palettehalloween__color2"></div>
+                <div class="palettehalloween__color3"></div>
+              </label> -->
             </div>
           </div>
         </div>
 
         <div>
           <div class="mainMenu">
-            <span class="mainMenu__icon"
-              ><i class="far fa-keyboard" aria-hidden="true"></i
-            ></span>
-            <h3 class="mainMenu__title">Rellena</h3>
+            <div class="mainMenu__iconTitle">
+              <span class="mainMenu__iconTitle--icon"
+                ><i class="far fa-keyboard" aria-hidden="true"></i
+              ></span>
+              <h3 class="mainMenu__iconTitle--title">Rellena</h3>
+            </div>
             <button class="mainMenu__button">
-              <i class="fas fa-chevron-down"></i>
+              <!-- <i class="fas fa-chevron-down"></i> -->
               <i class="fas fa-chevron-up"></i>
             </button>
           </div>
           <!-- Revisar cómo enlazar el formulario con JavaScript -->
-          <form action="" method="POST">
-            <label for="fullName">Nombre completo</label>
+          <form class="form" action="" method="POST">
+            <label class="form__label" for="fullName">Nombre completo</label>
             <input
+              class="form__input"
               id="fullName"
               type="text"
               name="fullName"
-              placeholder="Ej.: Jack Skellington"
+              placeholder="Ej.: Sally Hill"
+              required
             />
-            <label for="position">Puesto</label>
+            <label class="form__label" for="position">Puesto</label>
             <input
+              class="form__input"
               id="position"
               type="text"
               name="position"
-              placeholder="Ej.: Halloween guardian"
+              placeholder="Ej.: Front-end unicorn"
+              required
             />
-            <!-- Revisar cómo dar estilos con JavaScript -->
-            <label for="img">Imagen de perfil</label>
+            <label class="form__label labelImage" for="img">Imagen de perfil</label>
+            <div class="form__wrapperImage">
+              <div class="action">
+                <button class="action__upload-btn js__profile-trigger" type="button">
+                  Añadir imagen
+                </button>
+                <input
+                  type="file"
+                  name=""
+                  id="img-selector"
+                  class="action__hiddenField js__profile-upload-btn"
+                  required
+                />
+              </div>
+              <div class="profile">
+                <div class="profile__preview js__profile-preview"></div>
+              </div>
+            </div>
+            <label class="form__label" for="emailAddress">E-mail</label>
             <input
-              id="img"
-              type="file"
-              name="img"
-              placeholder="Ej.: Halloween guardian"
-            />
-            <label for="emailAddress">Email</label>
-            <input
+              class="form__input"
               id="emailAddress"
               type="email"
               name="emailAddress"
-              placeholder="Ej.: jack.skellington@gmail.com"
+              placeholder="Ej.: sally-hill@gmail.com"
+              required
             />
-            <label for="telephone">Teléfono</label>
+            <label class="form__label" for="telephone">Teléfono</label>
             <input
+              class="form__input"
               id="telephone"
               type="tel"
               name="telephone"
-              placeholder="Ej.: 666-66-66-66"
+              placeholder="Ej.: 555-55-55-55"
+              required
             />
 
-            <label for="linkedin">LinkedIn</label>
+            <label class="form__label" for="linkedin">LinkedIn</label>
             <input
+              class="form__input"
               id="linkedin"
               type="text"
               name="linkedin"
-              placeholder="Ej.: linkedin.com/jackSkellington"
+              placeholder="Ej.: linkedin.com/in/sally.hill"
             />
-            <label for="github">GitHub</label>
+            <label class="form__label" for="github">GitHub</label>
             <input
+              class="form__input"
               id="github"
               type="text"
               name="github"
-              placeholder="Ej.: @jack.skellington"
+              placeholder="Ej.: @sally-hill"
             />
           </form>
         </div>
 
         <div>
           <div class="mainMenu">
-            <span class="mainMenu__icon"
-              ><i class="fas fa-share-alt" aria-hidden="true"></i>
-            </span>
-            <h3 class="mainMenu__title">Comparte</h3>
+            <div class="mainMenu__iconTitle">
+              <span class="mainMenu__iconTitle--icon"
+                ><i class="fas fa-share-alt" aria-hidden="true"></i>
+              </span>
+              <h3 class="mainMenu__iconTitle--title">Comparte</h3>
+            </div>
             <button class="mainMenu__button">
-              <i class="fas fa-chevron-down"></i>
+              <!-- <i class="fas fa-chevron-down"></i> -->
               <i class="fas fa-chevron-up"></i>
             </button>
           </div>
-          <button class="mainButton">
-            <i class="far fa-address-card" aria-hidden="true">Crear tarjeta</i>
-          </button>
-          <div class="createLink">
-            <p>La tarjeta ha sido creada:</p>
-            <span></span>
-            <a class="createLink__twitterLink" href="">
-              <i class="fab fa-twitter" aria-hidden="true"></i>
-              Compartir en Twitter
-            </a>
+          <div class="collapsableShare">
+            <button class="collapsableShare__btn">
+              <i class="far fa-address-card" aria-hidden="true"></i>
+              Crear tarjeta
+            </button>
+            <div class="collapsableShare__createLink">
+              <p class="collapsableShare__createLink--title">
+                La tarjeta ha sido creada:
+              </p>
+              <span class="collapsableShare__createLink--twitterLink"></span>
+              <a class="collapsableShare__createLink--twitterButton" href="">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                Compartir en Twitter
+              </a>
+            </div>
           </div>
         </div>
 
@@ -194,12 +265,11 @@
     </main>
 
     <footer class="footer" role="contentinfo">
-      <!-- Queda pendiente decidir el nombre del grupo, cuando lo tengamos se modifica -->
-      <small class="footer__small"> &copy; Nombre del grupo 2020 </small>
+      <small class="footer__small"> &copy; devilAPPers 2020 </small>
       <a href="./profileCards.html" title="Ir a crear tu tarjeta de visita">
         <img
           class="footer__logo"
-          src="./assets/images/logo-adalab.png"
+          src="./assets/images/logo-devilappers.svg"
           alt="Logo del grupo"
           title="Logo del grupo"
         />
