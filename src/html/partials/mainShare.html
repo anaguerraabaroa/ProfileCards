@@ -1,26 +1,30 @@
 <div>
-  <div class="mainMenu mainMenuShare">
+  <div class="mainMenu">
     <div class="mainMenu__iconTitle">
       <span class="mainMenu__iconTitle--icon"
         ><i class="fas fa-share-alt" aria-hidden="true"></i>
       </span>
-      <h3 class="mainMenu__iconTitle--title mainMenuShare__title">Comparte</h3>
+      <h3 class="mainMenu__iconTitle--title">Comparte</h3>
     </div>
     <button class="mainMenu__button">
       <!-- <i class="fas fa-chevron-down"></i> -->
       <i class="fas fa-chevron-up"></i>
     </button>
   </div>
-  <button class="mainButton">
-    <i class="far fa-address-card" aria-hidden="true"></i>
-    Crear tarjeta
-  </button>
-  <div class="createLink">
-    <p class="createLink__title">La tarjeta ha sido creada:</p>
-    <span class="createLink__twitterLink"></span>
-    <a class="createLink__twitterButton" href="">
-      <i class="fab fa-twitter" aria-hidden="true"></i>
-      Compartir en Twitter
-    </a>
+  <div class="collapsableShare">
+    <button class="collapsableShare__btn">
+      <i class="far fa-address-card" aria-hidden="true"></i>
+      Crear tarjeta
+    </button>
+    <div class="collapsableShare__createLink">
+      <p class="collapsableShare__createLink--title">
+        La tarjeta ha sido creada:
+      </p>
+      <span class="collapsableShare__createLink--twitterLink"></span>
+      <a class="collapsableShare__createLink--twitterButton" href="">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+        Compartir en Twitter
+      </a>
+    </div>
   </div>
 </div>

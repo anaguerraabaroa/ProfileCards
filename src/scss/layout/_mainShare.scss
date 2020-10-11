@@ -1,89 +1,77 @@
-.mainMenuShare {
-  padding-top: 10px;
-  @media all and (min-width: 768px) {
-    padding-top: 0;
-  }
-
-  /* &__title {
-    margin-right: 137px;
-    @media all and (min-width: 768px) {
-      margin-right: 186px;
-    }
-  } */
-}
-
-.mainButton {
-  width: 199px;
-  height: 50px;
-  padding: auto;
-  margin: 30px 40px 30px 41px;
-  border-radius: 12px;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-  background-color: $colorPrimary;
-  color: $colorWhite;
-  font-family: $fontPrimary;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: normal;
-  text-transform: uppercase;
-  @media all and (min-width: 768px) {
-    margin: 33px 65px 30px 65px;
-  }
-}
-
-.fa-address-card {
-  margin-right: 5px;
-}
-
-.createLink {
+.collapsableShare {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid $colorBrand2;
-  border-bottom: 1px solid $colorBrand2;
-  margin-bottom: 30px;
-  @media all and (min-width: 768px) {
-    margin-bottom: 446px;
-  }
+  align-items: center;
 
-  &__title {
+  &__btn {
+    width: 199px;
+    height: 50px;
+    padding: auto;
+    margin: 30px 0px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    background-color: $colorPrimary;
+    color: $colorWhite;
     font-family: $fontPrimary;
     font-size: 18px;
     font-weight: 600;
-    margin: 20px 30px 5px 31px;
-    width: 320px;
-    height: 24px;
     line-height: normal;
+    text-transform: uppercase;
+  }
+  &__createLink {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid $colorBrand2;
+    border-bottom: 1px solid $colorBrand2;
+    margin-bottom: 30px;
     @media all and (min-width: 768px) {
-      margin: 20px 55px 5px 55px;
+      margin-bottom: 446px;
+    }
+
+    &--title {
+      font-family: $fontPrimary;
+      font-size: 18px;
+      font-weight: 600;
+      margin: 20px 30px 5px 31px;
+      width: 320px;
+      height: 24px;
+      line-height: normal;
+      @media all and (min-width: 768px) {
+        margin: 20px 55px 5px 55px;
+      }
+    }
+
+    &--twitterLink {
+      font-family: $fontPrimary;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: normal;
+      color: $colorPrimary;
+      margin: 0 -7px 10px -5px;
+      @media all and (min-width: 768px) {
+        margin: 0 18px 10px 19px;
+      }
+    }
+    &--twitterButton {
+      width: 181px;
+      height: 30px;
+      padding: 3px 9px 7px 10.5px;
+      border-radius: 3px;
+      font-family: $fontPrimary;
+      font-size: 14px;
+      text-decoration: none;
+      color: $colorWhite;
+      background-color: $colorBrand7;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+      margin: 0 49px 30px 50px;
+      @media all and (min-width: 768px) {
+        margin: 0 74px 30px 74px;
+      }
     }
   }
 
-  &__twitterLink {
-    font-family: $fontPrimary;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: normal;
-    color: $colorPrimary;
-    margin: 0 -7px 10px -5px;
-    @media all and (min-width: 768px) {
-      margin: 0 18px 10px 19px;
-    }
-  }
-  &__twitterButton {
-    width: 181px;
-    height: 30px;
-    padding: 3px 9px 7px 10.5px;
-    border-radius: 3px;
-    font-family: $fontPrimary;
-    font-size: 14px;
-    text-decoration: none;
-    color: $colorWhite;
-    background-color: $colorBrand7;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-    margin: 0 49px 30px 50px;
-    @media all and (min-width: 768px) {
-      margin: 0 74px 30px 74px;
-    }
+  .fa-address-card {
+    margin-right: 5px;
   }
 }
 
