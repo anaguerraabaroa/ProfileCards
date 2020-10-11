@@ -10,6 +10,7 @@
     margin: 30px 0px;
     border-radius: 12px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    border: none;
     background-color: $colorPrimary;
     color: $colorWhite;
     font-family: $fontPrimary;
@@ -21,24 +22,18 @@
   &__createLink {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-top: 1px solid $colorBrand2;
     border-bottom: 1px solid $colorBrand2;
-    margin-bottom: 30px;
-    @media all and (min-width: 768px) {
-      margin-bottom: 446px;
-    }
+    padding-top: 20px;
 
     &--title {
       font-family: $fontPrimary;
+      color: $colorSecondary;
       font-size: 18px;
       font-weight: 600;
-      margin: 20px 30px 5px 31px;
-      width: 320px;
-      height: 24px;
       line-height: normal;
-      @media all and (min-width: 768px) {
-        margin: 20px 55px 5px 55px;
-      }
     }
 
     &--twitterLink {
@@ -48,9 +43,6 @@
       line-height: normal;
       color: $colorPrimary;
       margin: 0 -7px 10px -5px;
-      @media all and (min-width: 768px) {
-        margin: 0 18px 10px 19px;
-      }
     }
     &--twitterButton {
       width: 181px;
@@ -64,9 +56,6 @@
       background-color: $colorBrand7;
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
       margin: 0 49px 30px 50px;
-      @media all and (min-width: 768px) {
-        margin: 0 74px 30px 74px;
-      }
     }
   }
 
