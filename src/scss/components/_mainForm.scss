@@ -20,13 +20,9 @@
     margin-bottom: 7px;
   }
   &__input {
-    width: 281px;
     height: 30px;
     border: solid 1px $colorPal1Light;
     margin-bottom: 20px;
-    @media all and (min-width: 768px) {
-      width: 329px;
-    }
 
     &[placeholder] {
       font-family: $fontPrimary;
