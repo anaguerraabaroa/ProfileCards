@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-bottom: 1px solid $colorBrand2;
 
   &__iconTitle {
     display: flex;
@@ -30,14 +31,23 @@
     background-color: transparent;
     border: none;
     color: $colorSecondary;
+    outline: none;
   }
 }
 
+.changeArrow {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
 .mainCollapsable {
+  display: none;
+}
+
+.showCollapsable {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid $colorBrand2;
   margin: 22px 0 10px 0;
 
   &__title {
