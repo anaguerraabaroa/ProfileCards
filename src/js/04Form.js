@@ -2,33 +2,46 @@
 
 console.log("Hola mundo 2");
 
-const nameForm = document.querySelector(".js-nameForm");
-const nameCard = document.querySelector(".js-nameCard");
-const positionForm = document.querySelector(".js-positionForm");
-const positionCard = document.querySelector(".js-positionCard");
-const linkedinForm = document.querySelector(".js-linkedinForm");
-const linkedinCard = document.querySelector(".js-linkedinCard");
-const gitHubForm = document.querySelector(".js-gitHubForm");
-const gitHubCard = document.querySelector(".js-gitHubCard");
+const inputList = document.querySelectorAll(".js-field"); //formulario
+const nameCard = document.querySelector(".js-nameCard"); // tarjeta
+const positionCard = document.querySelector(".js-positionCard"); // tarjeta
+const tlCard = document.querySelector(".js-tlCard"); //tarjeta
+const emailCard = document.querySelector(".js-emailCard"); //tarjeta
+const linkedinCard = document.querySelector(".js-linkedinCard"); //tarjeta
+const gitHubCard = document.querySelector(".js-gitHubCard"); //tarjeta
 
-function addName() {
-  let nameValue = nameForm.value;
-  nameCard.innerHTML = nameValue;
+function saveField(event) {
+  let fieldValue = event.currentTarget.value;
+  nameCard.innerHTML = fieldValue;
+  positionCard.innerHTML = fieldValue;
+  emailCard.innerHTML = fieldValue;
+  tlCard.innerHTML = fieldValue;
+  linkedinCard.innerHTML = fieldValue;
+  gitHubCard.innerHTML = fieldValue;
 }
 
-nameForm.addEventListener("keydown", addName);
-
-function addPosition() {
-  let positionValue = positionForm.value;
-  positionCard.innerHTML = positionValue;
+for (const eachItem of inputList) {
+  eachItem.addEventListener("keydown", saveField);
 }
 
-positionForm.addEventListener("keydown", addPosition);
+// function addName() {
+//   let nameValue = nameForm.value;
+//   nameCard.innerHTML = nameValue;
+// }
 
-function addLinkedin() {
-  let linkedinValue = linkedinForm.value;
-  linkedinCard.setAttribute("href", linkedinValue);
-  return linkedinValue;
-}
+// nameForm.addEventListener("keydown", addName);
 
-linkedinCard.addEventListener("click", addLinkedin);
+// function addPosition() {
+//   let positionValue = positionForm.value;
+//   positionCard.innerHTML = positionValue;
+// }
+
+// positionForm.addEventListener("keydown", addPosition);
+
+// function addLinkedin() {
+//   let linkedinValue = linkedinForm.value;
+//   linkedinCard.setAttribute("href", linkedinValue);
+//   return linkedinValue;
+// }
+
+// linkedinCard.addEventListener("click", addLinkedin);
