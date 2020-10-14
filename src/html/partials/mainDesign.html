@@ -6,14 +6,13 @@
       ></span>
       <h3 class="mainMenu__iconTitle--title">Diseña</h3>
     </div>
-    <button class="mainMenu__button">
-      <!-- <i class="fas fa-chevron-down faChevronDown"></i> -->
-      <i class="fas fa-chevron-up"></i>
+    <button class="mainMenu__button js-button">
+      <i class="fas fa-chevron-down"></i>
     </button>
   </div>
-  <div class="mainCollapsable">
-    <h4 class="mainCollapsable__title">Colores</h4>
-    <div class="mainCollapsable__palette">
+  <div class="mainCollapsable js-mainCollapsable">
+    <h4 class="showCollapsable__title">Colores</h4>
+    <div class="showCollapsable__palette">
       <label for="palette1" class="palette1">
         <input
           class="paletteRadio"
@@ -50,19 +49,18 @@
         <div class="palette3__color2"></div>
         <div class="palette3__color3"></div>
       </label>
-      <!-- Comentar con Dayana si podemos incluir una paleta temática de Halloween
-      <label for="halloween" class="palettehalloween">
+      <label for="halloween" class="palette4">
         <input
           class="paletteRadio"
           id="halloween"
           type="radio"
           value="halloween"
-          name="halloween" **Cambiar el name por palette cuando vayamos a publicar la paleta**
+          name="palette"
         />
-        <div class="palettehalloween__color1"></div>
-        <div class="palettehalloween__color2"></div>
-        <div class="palettehalloween__color3"></div>
-      </label> -->
+        <div class="palette4__color1"></div>
+        <div class="palette4__color2"></div>
+        <div class="palette4__color3"></div>
+      </label>
     </div>
   </div>
 </div>

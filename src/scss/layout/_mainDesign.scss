@@ -137,24 +137,25 @@
   }
 }
 
-// .palettehalloween {
-//   display: flex;
-//   flex-direction: row;
-//   &__color1 {
-//     background-color: $colorPalHwDark;
-//     width: 30px;
-//     height: 25px;
-//     margin-top: -7px;
-//   }
-//   &__color2 {
-//     background-color: $colorPalHwMedium;
-//     width: 30px;
-//     height: 25px;
-//     margin-top: -7px;
-//   }
-//   &__color3 {
-//     background-color: $colorPalHwLight;
-//     width: 30px;
-//     height: 25px;
-//     margin-top: -7px;
-//   }
+.palette4 {
+  display: flex;
+  flex-direction: row;
+  &__color1 {
+    background-color: $colorPalHwDark;
+    width: 30px;
+    height: 25px;
+    margin-top: -7px;
+  }
+  &__color2 {
+    background-color: $colorPalHwMedium;
+    width: 30px;
+    height: 25px;
+    margin-top: -7px;
+  }
+  &__color3 {
+    background-color: $colorPalHwLight;
+    width: 30px;
+    height: 25px;
+    margin-top: -7px;
+  }
+}
