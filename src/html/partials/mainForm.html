@@ -1,5 +1,5 @@
- <div>
-  <div class="mainMenu">
+<div>
+  <nav class="mainMenu">
     <div class="mainMenu__iconTitle">
       <span class="mainMenu__iconTitle--icon"
         ><i class="far fa-keyboard" aria-hidden="true"></i
@@ -9,79 +9,81 @@
     <button class="mainMenu__button js-button">
       <i class="fas fa-chevron-down"></i>
     </button>
-  </div>
+  </nav>
   <!-- Revisar cómo enlazar el formulario con JavaScript -->
-  <form class="form mainCollapsable" action="" method="POST">
-    <label class="form__label" for="fullName">Nombre completo</label>
-    <input
-      class="form__input js-field"
-      id="fullName"
-      type="text"
-      name="fullName"
-      placeholder="Ej.: Sally Hill"
-      required
-    />
-    <label class="form__label" for="position">Puesto</label>
-    <input
-      class="form__input js-field"
-      id="position"
-      type="text"
-      name="position"
-      placeholder="Ej.: Front-end unicorn"
-      required
-    />
-    <label class="form__label labelImage" for="img">Imagen de perfil</label>
-    <div class="form__wrapperImage">
-      <div class="action">
-        <button class="action__upload-btn js__profile-trigger" type="button">
-          Añadir imagen
-        </button>
-        <input
-          type="file"
-          name=""
-          id="img-selector"
-          class="action__hiddenField js__profile-upload-btn"
-          required
-        />
+  <section class="js-mainCollapsable">
+    <form class="form mainCollapsable" action="" method="POST">
+      <label class="form__label" for="fullName">Nombre completo</label>
+      <input
+        class="form__input js-field"
+        id="fullName"
+        type="text"
+        name="fullName"
+        placeholder="Ej.: Sally Hill"
+        required
+      />
+      <label class="form__label" for="position">Puesto</label>
+      <input
+        class="form__input js-field"
+        id="position"
+        type="text"
+        name="position"
+        placeholder="Ej.: Front-end unicorn"
+        required
+      />
+      <label class="form__label labelImage" for="img">Imagen de perfil</label>
+      <div class="form__wrapperImage">
+        <div class="action">
+          <button class="action__upload-btn js__profile-trigger" type="button">
+            Añadir imagen
+          </button>
+          <input
+            type="file"
+            name=""
+            id="img-selector"
+            class="action__hiddenField js__profile-upload-btn"
+            required
+          />
+        </div>
+        <div class="profile">
+          <div class="profile__preview js__profile-preview"></div>
+        </div>
       </div>
-      <div class="profile">
-        <div class="profile__preview js__profile-preview"></div>
-      </div>
-    </div>
-    <label class="form__label" for="emailAddress">E-mail</label>
-    <input
-      class="form__input js-field"
-      id="emailAddress"
-      type="email"
-      name="emailAddress"
-      placeholder="Ej.: sally-hill@gmail.com"
-      required
-    />
-    <label class="form__label" for="telephone">Teléfono</label>
-    <input
-      class="form__input js-field"
-      id="telephone"
-      type="tel"
-      name="telephone"
-      placeholder="Ej.: 555-55-55-55"
-      required
-    />
+      <label class="form__label" for="emailAddress">E-mail</label>
+      <input
+        class="form__input js-field"
+        id="emailAddress"
+        type="email"
+        name="emailAddress"
+        placeholder="Ej.: sally-hill@gmail.com"
+        required
+      />
+      <label class="form__label" for="telephone">Teléfono</label>
+      <input
+        class="form__input js-field"
+        id="telephone"
+        type="tel"
+        name="telephone"
+        placeholder="Ej.: 555-55-55-55"
+        required
+      />
 
-    <label class="form__label" for="linkedin">LinkedIn</label>
-    <input
-      class="form__input js-field"
-      id="linkedin"
-      type="text"
-      name="linkedin"
-      placeholder="Ej.: linkedin.com/in/sally.hill"
-    />
-    <label class="form__label" for="github">GitHub</label>
-    <input
-      class="form__input js-field"
-      id="github"
-      type="text"
-      name="github"
-      placeholder="Ej.: @sally-hill"
-    />
-  </form>
+      <label class="form__label" for="linkedin">LinkedIn</label>
+      <input
+        class="form__input js-field"
+        id="linkedin"
+        type="text"
+        name="linkedin"
+        placeholder="Ej.: linkedin.com/in/sally.hill"
+      />
+      <label class="form__label" for="github">GitHub</label>
+      <input
+        class="form__input js-field"
+        id="github"
+        type="text"
+        name="github"
+        placeholder="Ej.: @sally-hill"
+      />
+    </form>
+  </section>
 </div>
