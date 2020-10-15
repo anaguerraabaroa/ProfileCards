@@ -1,13 +1,16 @@
 "use strict";
 console.log("Hola mundo");
 
-const arrow = document.querySelector(".js-button");
+const arrow = document.querySelectorAll(".js-button");
 const collapsable = document.querySelector(".js-mainCollapsable");
 
-function rotateArrow() {
-  arrow.classList.toggle("changeArrow");
+function rotateArrow(event) {
+  event.currentTarget.classList.toggle("changeArrow");
   collapsable.classList.toggle("showCollapsable");
-  console.log("dentro");
+  console.log(event.currentTarget);
 }
 
-arrow.addEventListener("click", rotateArrow);
+for (let i = 0; i < arrow.length; i++) {
+  arrow[i].addEventListener("click", rotateArrow);
+}
+
