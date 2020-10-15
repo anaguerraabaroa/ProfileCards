@@ -1,0 +1,54 @@
+//Opción 1
+.palette1_name {
+  color: $colorPal1Dark;
+}
+
+.palette1_border {
+  border-color: $colorPal1Medium;
+}
+
+.palette1_circle {
+  border-color: $colorPal1Light;
+}
+.palette1_icon {
+  color: $colorPal1Dark;
+}
+//Opción 2
+.palette2_name {
+  color: $colorPal2Dark;
+}
+.palette2_border {
+  border-color: $colorPal1Medium;
+}
+.palette2_circle {
+  border-color: $colorPal1Light;
+}
+.palette2_icon {
+  color: $colorPal2Dark;
+}
+//Opción 3
+.palette3_name {
+  color: $colorPal3Dark;
+}
+.palette3_border {
+  border-color: $colorPal3Medium;
+}
+.palette3_circle {
+  border-color: $colorPal3Light;
+}
+.palette3_icon {
+  color: $colorPal3Dark;
+}
+//Opción 4
+.palette4_name {
+  color: $colorPalHwDark;
+}
+.palette4_border {
+  border-color: $colorPalHwMedium;
+}
+.palette4_circle {
+  border-color: $colorPalHwLight;
+}
+.palette4_icon {
+  color: $colorPalHwDark;
+}
