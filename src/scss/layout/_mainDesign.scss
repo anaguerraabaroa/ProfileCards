@@ -35,15 +35,6 @@
   }
 }
 
-.changeArrow {
-  transform: rotate(180deg);
-  transition: 0.5s;
-}
-
-.mainCollapsable {
-  display: none;
-}
-
 .showCollapsable {
   display: flex;
   flex-direction: row;
