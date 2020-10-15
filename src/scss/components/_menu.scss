@@ -1,0 +1,36 @@
+.mainMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid $colorBrand2;
+
+  &__iconTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &--icon {
+      margin-right: 10px;
+      font-size: 18px;
+      color: $colorPrimary;
+    }
+
+    &--title {
+      font-family: $fontPrimary;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: normal;
+      color: $colorSecondary;
+      text-transform: uppercase;
+    }
+  }
+  &__button {
+    font-size: 18px;
+    font-weight: normal;
+    background-color: transparent;
+    border: none;
+    color: $colorSecondary;
+    outline: none;
+  }
+}
