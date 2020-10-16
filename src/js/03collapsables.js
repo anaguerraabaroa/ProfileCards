@@ -14,6 +14,4 @@ function getCollapsable(event) {
 //   arrow[i].addEventListener("click", getCollapsable);
 // }
 
-for (let i = 0; i < arrow.length; i++) {
-  arrow[i].addEventListener("click", getCollapsable);
-}
+// ---------- ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ESTO FUNCIONA Y NO SE QUITA!!!!!!!!!!!! --------------
