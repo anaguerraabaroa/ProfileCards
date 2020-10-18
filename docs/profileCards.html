@@ -91,12 +91,12 @@
               </span>
               <h3 class="mainMenu__iconTitle--title">Diseña</h3>
             </div>
-            <button class="mainMenu__button js-button">
-              <i class="fas fa-chevron-up"></i>
+            <button class="mainMenu__button js-button" id="design">
+              <i class="fas fa-chevron-down"></i>
             </button>
           </nav>
 
-          <section class="collapsableDesign js-mainCollapsable">
+          <section class="collapsableDesign hideCollapsable section-design">
             <!--A esta clase hay que QUITARLE hideCollapsable con JS para desplegarla-->
             <h4 class="collapsableDesign__title">Colores</h4>
             <div class="collapsableDesign__palette">
@@ -160,13 +160,13 @@
               </span>
               <h3 class="mainMenu__iconTitle--title">Rellena</h3>
             </div>
-            <button class="mainMenu__button js-button">
-              <i class="fas fa-chevron-up"></i>
+            <button class="mainMenu__button js-button" id="form">
+              <i class="fas fa-chevron-down"></i>
             </button>
           </nav>
 
           <!------- Revisar cómo enlazar el formulario con JavaScript ---------->
-          <section class="hideCollapsable js-mainCollapsable">
+          <section class="hideCollapsable section-form">
             <!--A esta clase hay que QUITARLE hideCollapsable con JS para desplegarla-->
             <form class="form" action="" method="POST">
               <label class="form__label" for="fullName">Nombre completo</label>
@@ -252,18 +252,18 @@
               </span>
               <h3 class="mainMenu__iconTitle--title">Comparte</h3>
             </div>
-            <button class="mainMenu__button js-button">
-              <i class="fas fa-chevron-up"></i>
+            <button class="mainMenu__button js-button" id="share">
+              <i class="fas fa-chevron-down"></i>
             </button>
           </nav>
 
-          <section class="collapsableShare hideCollapsable js-mainCollapsable">
+          <section class="collapsableShare hideCollapsable section-share">
             <!--A esta clase hay que QUITARLE hideCollapsable con JS para desplegarla-->
             <button class="collapsableShare__btn">
               <i class="far fa-address-card" aria-hidden="true"></i>
               Crear tarjeta
             </button>
-            <div class="collapsableShare__createLink">
+            <div class="collapsableShare__createLink hideCollapsable">
               <p class="collapsableShare__createLink--title">
                 La tarjeta ha sido creada:
               </p>
