@@ -1,17 +1,16 @@
 "use strict";
 console.log("Hola mundo");
 
-const arrow = document.querySelectorAll(".js-button");
-const collapsable = document.querySelector(".js-mainCollapsable");
+const arrowList = document.querySelectorAll(".js-button");
 
-function getCollapsable(event) {
-  event.currentTarget.classList.toggle("changeArrow");
-  collapsable.classList.toggle("hideCollapsable");
-  console.log(event.currentTarget);
+for (let i = 0; i < arrowList.length; i++) {
+  arrowList[i].addEventListener("click", getCollapsable);
 }
 
-// for (let i = 0; i < arrow.length; i++) {
-//   arrow[i].addEventListener("click", getCollapsable);
-// }
+function getCollapsable(event) {
+  const idArrow = event.currentTarget.id;
+  console.log(".section-" + idArrow);
 
-// ---------- ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ESTO FUNCIONA Y NO SE QUITA!!!!!!!!!!!! --------------
+  const section = document.querySelector(".section-" + idArrow);
+  section.classList.toggle("hideCollapsable");
+}
