@@ -19,6 +19,7 @@
     line-height: normal;
     text-transform: uppercase;
   }
+
   &__createLink {
     display: flex;
     flex-direction: column;
@@ -27,6 +28,7 @@
     border-top: 1px solid $colorBrand2;
     border-bottom: 1px solid $colorBrand2;
     padding-top: 20px;
+    width: 100%;
 
     &--title {
       font-family: $fontPrimary;
