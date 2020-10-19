@@ -45,9 +45,12 @@
     color: $colorWhite;
     font-family: $fontPrimary;
     font-size: 14px;
-    padding: 3px 22px 7px 22px;
+    padding: 3px 22px 3px 22px;
     border: none;
     margin-bottom: 20px;
+    &:hover {
+      cursor: pointer;
+    }
   }
   &__hiddenField {
     /* Ocultamos el input de tipo "file" porque no podemos 

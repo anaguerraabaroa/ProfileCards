@@ -19,6 +19,9 @@
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__createLink {
