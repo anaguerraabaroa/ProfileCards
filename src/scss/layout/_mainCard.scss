@@ -23,6 +23,11 @@
     line-height: 20px;
     text-transform: uppercase;
     color: $colorSecondary;
+    &:hover {
+      color: $colorWhite;
+      background-color: $colorBrand1;
+      cursor: pointer;
+    }
 
     &--trashBin {
       padding-right: 3px;
@@ -95,6 +100,7 @@
     color: $colorPal1Dark;
     justify-self: center;
     align-self: center;
+    padding: 4px;
   }
 }
 
