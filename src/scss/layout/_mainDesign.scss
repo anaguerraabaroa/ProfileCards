@@ -3,6 +3,18 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 22px 0 10px 0;
+  animation-name: collapsable;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  @keyframes collapsable {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
   &__title {
     font-size: 14px;
