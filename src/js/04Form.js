@@ -7,8 +7,7 @@ const nameCard = document.querySelector(".js-nameCard");
 const positionCard = document.querySelector(".js-positionCard");
 let inputValue;
 let inputId;
-const form =
-{
+const form = {
   palette: 1,
   name: "",
   job: "",
@@ -16,7 +15,7 @@ const form =
   email: "",
   linkedin: "",
   github: "",
-  photo: ""
+  photo: "",
 };
 
 for (let i = 0; i < inputList.length; i++) {
@@ -32,23 +31,25 @@ function saveField(event) {
 }
 
 function paintCard() {
-  document.querySelector(".js-nameCard").innerHTML = form.name || "Nombre Apellido";
-  document.querySelector(".js-positionCard").innerHTML = form.job || "Front-end developer";
+  document.querySelector(".js-nameCard").innerHTML =
+    form.name || "Nombre Apellido";
+  document.querySelector(".js-positionCard").innerHTML =
+    form.job || "Front-end developer";
   document.querySelector(".js-tlCard").href = "tel:" + form.phone;
   document.querySelector(".js-emailCard").href = "mailto:" + form.email;
   document.querySelector(".js-linkedinCard").href = form.linkedin;
-  document.querySelector(".js-gitHubCard").href = "https://github.com" + form.github;
+  document.querySelector(".js-gitHubCard").href =
+    "https://github.com" + form.github;
 }
 
 function erasePalettes() {
   if (palette1.checked != true) {
     palette1.checked = true;
-  } else if (palette2.checked = true) {
+  } else if ((palette2.checked = true)) {
     palette2.checked = false;
-  } else if (palette3.checked = true) {
+  } else if ((palette3.checked = true)) {
     palette3.checked = false;
-  } else if (palette4.checked = true)
-    palette4.checked = false;
+  } else if ((palette4.checked = true)) palette4.checked = false;
   changeColors();
 }
 
@@ -69,6 +70,5 @@ const handleReset = function () {
   }
   paintCard();
   erasePalettes();
-}
+};
 resetButton.addEventListener("click", handleReset);
-

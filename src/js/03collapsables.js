@@ -14,7 +14,4 @@ function getCollapsable(event) {
 
   const section = document.querySelector(".section-" + idArrow);
   section.classList.toggle("hideCollapsable");
-
-  const menu = document.querySelector(".navShare");
-  menu.classList.toggle("hideLineShare");
 }
