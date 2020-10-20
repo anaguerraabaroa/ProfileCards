@@ -9,16 +9,18 @@ let inputValue;
 let inputId;
 const form =
 {
-  fullName: "",
-  position: "",
-  telephone: "",
-  emailAddress: "",
+  palette: 1,
+  name: "",
+  job: "",
+  phone: "",
+  email: "",
   linkedin: "",
   github: "",
+  photo: ""
 };
 
 for (let i = 0; i < inputList.length; i++) {
-  inputList[i].addEventListener("blur", saveField);
+  inputList[i].addEventListener("keyup", saveField);
 }
 
 function saveField(event) {
@@ -30,12 +32,43 @@ function saveField(event) {
 }
 
 function paintCard() {
-  console.log(form.fullName);
-  document.querySelector(".js-nameCard").innerHTML = form.fullName || "Nombre Apellido";
-  document.querySelector(".js-positionCard").innerHTML = form.position || "Front-end developer";
-  document.querySelector(".js-tlCard").href = "tel:" + form.telephone;
-  document.querySelector(".js-emailCard").href = "mailto:" + form.emailAddress;
+  document.querySelector(".js-nameCard").innerHTML = form.name || "Nombre Apellido";
+  document.querySelector(".js-positionCard").innerHTML = form.job || "Front-end developer";
+  document.querySelector(".js-tlCard").href = "tel:" + form.phone;
+  document.querySelector(".js-emailCard").href = "mailto:" + form.email;
   document.querySelector(".js-linkedinCard").href = form.linkedin;
   document.querySelector(".js-gitHubCard").href = "https://github.com" + form.github;
 }
+
+function erasePalettes() {
+  if (palette1.checked != true) {
+    palette1.checked = true;
+  } else if (palette2.checked = true) {
+    palette2.checked = false;
+  } else if (palette3.checked = true) {
+    palette3.checked = false;
+  } else if (palette4.checked = true)
+    palette4.checked = false;
+  changeColors();
+}
+
+//Reset
+
+const resetButton = document.querySelector(".js-resetBtn");
+
+const handleReset = function () {
+  form.name = "";
+  form.job = "";
+  form.email = "";
+  form.phone = "";
+  form.linkedin = "";
+  form.github = "";
+  form.photo = "";
+  for (const input of inputList) {
+    input.value = "";
+  }
+  paintCard();
+  erasePalettes();
+}
+resetButton.addEventListener("click", handleReset);
 
