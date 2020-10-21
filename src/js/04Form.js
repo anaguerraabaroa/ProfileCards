@@ -68,6 +68,10 @@ const handleReset = function () {
   for (const input of inputList) {
     input.value = "";
   }
+  profileImage.style.backgroundImage =
+    "url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)";
+  profilePreview.style.backgroundImage =
+    "url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)";
   paintCard();
   erasePalettes();
 };
