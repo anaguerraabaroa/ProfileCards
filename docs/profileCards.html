@@ -31,7 +31,7 @@
     <main class="mainProfileCards" role="main">
       <section class="mainCard">
         <div class="resetImage">
-          <button class="mainCard__button" type="reset" value="Reset">
+          <button class="mainCard__button js-resetBtn" type="reset" value="Reset">
             <i
               class="far fa-trash-alt mainCard__button--trashBin"
               aria-hidden="true"
@@ -57,22 +57,35 @@
             <nav>
               <ul class="mainCard__wrapper--list">
                 <li class="socialLink js-circle1">
-                  <a href="" class="socialLink__link js-tlCard js-icon1"
+                  <a
+                    href=""
+                    target="_blank"
+                    class="socialLink__link js-tlCard js-icon1"
                     ><i class="fas fa-mobile-alt" aria-hidden="true"></i
                   ></a>
                 </li>
                 <li class="socialLink js-circle2">
-                  <a href="" class="socialLink__link js-emailCard js-icon2"
+                  <a
+                    href=""
+                    target="_blank"
+                    class="socialLink__link js-emailCard js-icon2"
                     ><i class="far fa-envelope" aria-hidden="true"></i
                   ></a>
                 </li>
                 <li class="socialLink js-circle3">
-                  <a href="" class="socialLink__link js-linkedinCard js-icon3"
+                  <a
+                    href=""
+                    target="_blank"
+                    class="socialLink__link js-linkedinCard js-icon3"
                     ><i class="fab fa-linkedin-in" aria-hidden="true"></i
                   ></a>
                 </li>
                 <li class="socialLink js-circle4">
-                  <a href="" class="socialLink__link js-gitHubCard js-icon4">
+                  <a
+                    href=""
+                    target="_blank"
+                    class="socialLink__link js-gitHubCard js-icon4"
+                  >
                     <i class="fab fa-github-alt" aria-hidden="true"></i
                   ></a>
                 </li>
@@ -172,30 +185,25 @@
               <label class="form__label" for="fullName">Nombre completo</label>
               <input
                 class="form__input js-field"
-                id="fullName"
+                id="name"
                 type="text"
-                name="fullName"
+                name="name"
                 placeholder="Ej.: Maléfica"
                 required
               />
               <label class="form__label" for="position">Puesto</label>
               <input
                 class="form__input js-field"
-                id="position"
+                id="job"
                 type="text"
-                name="position"
+                name="job"
                 placeholder="Ej.: Bruja malvada"
                 required
               />
-              <label class="form__label labelImage" for="img"
-                >Imagen de perfil</label
-              >
+              <label class="form__label labelImage" for="img">Imagen de perfil</label>
               <div class="form__wrapperImage">
                 <div class="action">
-                  <button
-                    class="action__upload-btn js__profile-trigger"
-                    type="button"
-                  >
+                  <button class="action__upload-btn js__profile-trigger" type="button">
                     Añadir imagen
                   </button>
                   <input
@@ -213,18 +221,18 @@
               <label class="form__label" for="emailAddress">E-mail</label>
               <input
                 class="form__input js-field"
-                id="emailAddress"
+                id="email"
                 type="email"
-                name="emailAddress"
+                name="email"
                 placeholder="Ej.: malefica@gmail.com"
                 required
               />
               <label class="form__label" for="telephone">Teléfono</label>
               <input
                 class="form__input js-field"
-                id="telephone"
+                id="phone"
                 type="tel"
-                name="telephone"
+                name="phone"
                 placeholder="Ej.: 666-66-66-66"
                 required
               />
@@ -280,7 +288,9 @@
             </div>
           </section>
         </div>
+
       </section>
+
     </main>
 
     <footer class="footer" role="contentinfo">
