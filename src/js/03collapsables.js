@@ -1,5 +1,4 @@
 "use strict";
-console.log("Hola mundo");
 
 const arrowList = document.querySelectorAll(".js-button");
 
