@@ -1,5 +1,4 @@
 "use strict";
-console.log("Hola mundo");
 
 const arrowList = document.querySelectorAll(".js-button");
 
@@ -10,7 +9,6 @@ for (let i = 0; i < arrowList.length; i++) {
 function getCollapsable(event) {
   event.currentTarget.classList.toggle("changeArrow");
   const idArrow = event.currentTarget.id;
-  console.log(".section-" + idArrow);
 
   const section = document.querySelector(".section-" + idArrow);
   section.classList.toggle("hideCollapsable");

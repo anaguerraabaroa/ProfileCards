@@ -7,8 +7,8 @@ const nameCard = document.querySelector(".js-nameCard");
 const positionCard = document.querySelector(".js-positionCard");
 let inputValue;
 let inputId;
-const form = {
-  palette: 1,
+let form = {
+  palette: "",
   name: "",
   job: "",
   phone: "",
@@ -18,18 +18,23 @@ const form = {
   photo: "",
 };
 
-for (let i = 0; i < inputList.length; i++) {
-  inputList[i].addEventListener("keyup", saveField);
+function listenSaveField() {
+  for (let i = 0; i < inputList.length; i++) {
+    inputList[i].addEventListener("keyup", saveField);
+  }
 }
 
+// Equipara los valores introducidos en el formulario con los correspondientes elementos de la tarjeta
 function saveField(event) {
   inputValue = event.currentTarget.value;
   inputId = event.currentTarget.id;
   form[inputId] = inputValue;
   console.log(form);
+  setLocalStorage();
   paintCard();
 }
 
+// Pinta los valores introducidos en el formulario en la tarjeta
 function paintCard() {
   document.querySelector(".js-nameCard").innerHTML =
     form.name || "Nombre Apellido";
@@ -40,17 +45,6 @@ function paintCard() {
   document.querySelector(".js-linkedinCard").href = form.linkedin;
   document.querySelector(".js-gitHubCard").href =
     "https://github.com" + form.github;
-}
-
-function erasePalettes() {
-  if (palette1.checked != true) {
-    palette1.checked = true;
-  } else if ((palette2.checked = true)) {
-    palette2.checked = false;
-  } else if ((palette3.checked = true)) {
-    palette3.checked = false;
-  } else if ((palette4.checked = true)) palette4.checked = false;
-  changeColors();
 }
 
 //Reset
@@ -65,6 +59,7 @@ const handleReset = function () {
   form.linkedin = "";
   form.github = "";
   form.photo = "";
+  localStorage.removeItem("formData");
   for (const input of inputList) {
     input.value = "";
   }
@@ -72,7 +67,9 @@ const handleReset = function () {
     "url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)";
   profilePreview.style.backgroundImage =
     "url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)";
+
+  setLocalStorage();
   paintCard();
-  erasePalettes();
+  erasePalettes(); // 05palette.js - Line 258
 };
 resetButton.addEventListener("click", handleReset);
