@@ -70,6 +70,6 @@ const handleReset = function () {
 
   setLocalStorage();
   paintCard();
-  erasePalettes();
+  erasePalettes(); // 05palette.js - Line 258
 };
 resetButton.addEventListener("click", handleReset);

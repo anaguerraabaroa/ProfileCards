@@ -1,18 +1,5 @@
 "use strict";
 
-function erasePalettes() {
-  if (palette1.checked != true) {
-    palette1.checked = true;
-  } else if ((palette2.checked = true)) {
-    palette2.checked = false;
-  } else if ((palette3.checked = true)) {
-    palette3.checked = false;
-  } else if ((palette4.checked = true)) {
-    palette4.checked = false;
-  }
-  changeColors();
-}
-
 const palette1 = document.querySelector(".js-paletteRadio1");
 const palette2 = document.querySelector(".js-paletteRadio2");
 const palette3 = document.querySelector(".js-paletteRadio3");
@@ -258,11 +245,24 @@ function changeColors() {
     icon4.classList.remove("palette3_icon4"); //palette 3
     icon4.classList.add("palette4_icon4"); //palette 4
   }
-
-  setLocalStorage();
+  paintCard();
 }
 
 palette1.addEventListener("click", changeColors);
 palette2.addEventListener("click", changeColors);
 palette3.addEventListener("click", changeColors);
 palette4.addEventListener("click", changeColors);
+
+// Activated by RESET button - Changes selected palette to default palette 1
+function erasePalettes() {
+  if (palette1.checked != true) {
+    palette1.checked = true;
+  } else if ((palette2.checked = true)) {
+    palette2.checked = false;
+  } else if ((palette3.checked = true)) {
+    palette3.checked = false;
+  } else if ((palette4.checked = true)) {
+    palette4.checked = false;
+  }
+  changeColors();
+}
