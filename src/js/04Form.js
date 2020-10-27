@@ -8,7 +8,7 @@ const positionCard = document.querySelector(".js-positionCard");
 let inputValue;
 let inputId;
 let form = {
-  palette: "",
+  palette: 1,
   name: "",
   job: "",
   phone: "",
@@ -29,7 +29,6 @@ function saveField(event) {
   inputValue = event.currentTarget.value;
   inputId = event.currentTarget.id;
   form[inputId] = inputValue;
-  console.log(form);
   setLocalStorage();
   paintCard();
 }
