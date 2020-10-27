@@ -8,7 +8,7 @@ const positionCard = document.querySelector(".js-positionCard");
 let inputValue;
 let inputId;
 let form = {
-  palette: 1,
+  palette: "",
   name: "",
   job: "",
   phone: "",
@@ -47,19 +47,6 @@ function paintCard() {
     "https://github.com" + form.github;
 }
 
-function erasePalettes() {
-  if (palette1.checked != true) {
-    palette1.checked = true;
-  } else if ((palette2.checked = true)) {
-    palette2.checked = false;
-  } else if ((palette3.checked = true)) {
-    palette3.checked = false;
-  } else if ((palette4.checked = true)) {
-    palette4.checked = false;
-  }
-  changeColors();
-}
-
 //Reset
 
 const resetButton = document.querySelector(".js-resetBtn");
@@ -80,6 +67,8 @@ const handleReset = function () {
     "url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)";
   profilePreview.style.backgroundImage =
     "url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)";
+
+  setLocalStorage();
   paintCard();
   erasePalettes();
 };
