@@ -1,14 +1,10 @@
 "use strict";
 
-let LinkedinLink = document.querySelector(".js-linkedinCard");
-
-const inputList = document.querySelectorAll(".js-field"); //formulario
-const nameCard = document.querySelector(".js-nameCard");
-const positionCard = document.querySelector(".js-positionCard");
+const inputList = document.querySelectorAll(".js-field"); // --- Form inputs
 let inputValue;
 let inputId;
-const form = {
-  palette: 1,
+let form = {
+  palette: "",
   name: "",
   job: "",
   phone: "",
@@ -18,18 +14,22 @@ const form = {
   photo: "",
 };
 
-for (let i = 0; i < inputList.length; i++) {
-  inputList[i].addEventListener("keyup", saveField);
+function listenSaveField() {
+  for (let i = 0; i < inputList.length; i++) {
+    inputList[i].addEventListener("keyup", saveField);
+  }
 }
 
+// ----- Saves form input values in FORM array
 function saveField(event) {
   inputValue = event.currentTarget.value;
   inputId = event.currentTarget.id;
   form[inputId] = inputValue;
-  console.log(form);
+  setLocalStorage();
   paintCard();
 }
 
+// ----- Paints form input values on card
 function paintCard() {
   document.querySelector(".js-nameCard").innerHTML =
     form.name || "Nombre Apellido";
@@ -42,19 +42,7 @@ function paintCard() {
     "https://github.com" + form.github;
 }
 
-function erasePalettes() {
-  if (palette1.checked != true) {
-    palette1.checked = true;
-  } else if ((palette2.checked = true)) {
-    palette2.checked = false;
-  } else if ((palette3.checked = true)) {
-    palette3.checked = false;
-  } else if ((palette4.checked = true)) palette4.checked = false;
-  changeColors();
-}
-
-//Reset
-
+// ----- Clears values on card & on inputs & resets default image
 const resetButton = document.querySelector(".js-resetBtn");
 
 const handleReset = function () {
@@ -65,6 +53,7 @@ const handleReset = function () {
   form.linkedin = "";
   form.github = "";
   form.photo = "";
+  localStorage.removeItem("formData");
   for (const input of inputList) {
     input.value = "";
   }
@@ -72,7 +61,9 @@ const handleReset = function () {
     "url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)";
   profilePreview.style.backgroundImage =
     "url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)";
-  paintCard();
-  erasePalettes();
+
+  setLocalStorage(); // ----- See function in 09localStorage - Line 3
+  paintCard(); // ----- See function in line 38
+  erasePalettes(); // ----- See function in 05palette.js - Line 258
 };
 resetButton.addEventListener("click", handleReset);

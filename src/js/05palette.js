@@ -1,5 +1,6 @@
 "use strict";
 
+/// --- CREO QUE FALTA METER EN ALGÚN SITIO LA PALETA SELECCIONADA DENTRO DEL ARRAY FORM -- IGUAL QUE EN LA FUNCIÓN PAINTACARDS (L37 - 04FORM) ---> Y LO MISMO PARA LA FOTO
 const palette1 = document.querySelector(".js-paletteRadio1");
 const palette2 = document.querySelector(".js-paletteRadio2");
 const palette3 = document.querySelector(".js-paletteRadio3");
@@ -55,8 +56,7 @@ function changeColors() {
     circle4.classList.remove("palette3_circle4"); //palette 3
     circle4.classList.remove("palette4_circle4"); //palette 4
 
-    //Icon
-
+    //Icons
     icon1.classList.add("palette1_icon1"); //palette 1
     icon1.classList.remove("palette2_icon1"); //palette 2
     icon1.classList.remove("palette3_icon1"); //palette 3
@@ -112,8 +112,7 @@ function changeColors() {
     circle4.classList.remove("palette3_circle4"); //palette 3
     circle4.classList.remove("palette4_circle4"); //palette 4
 
-    //Icon
-
+    //Icons
     icon1.classList.remove("palette1_icon1"); //palette 1
     icon1.classList.add("palette2_icon1"); //palette 2
     icon1.classList.remove("palette3_icon1"); //palette 3
@@ -169,8 +168,7 @@ function changeColors() {
     circle4.classList.add("palette3_circle4"); //palette 3
     circle4.classList.remove("palette4_circle4"); //palette 4
 
-    //Icon
-
+    //Icons
     icon1.classList.remove("palette1_icon1"); //palette 1
     icon1.classList.remove("palette2_icon1"); //palette 2
     icon1.classList.add("palette3_icon1"); //palette 3
@@ -226,8 +224,7 @@ function changeColors() {
     circle4.classList.remove("palette3_circle4"); //palette 3
     circle4.classList.add("palette4_circle4"); //palette 4
 
-    //Icon
-
+    //Icons
     icon1.classList.remove("palette1_icon1"); //palette 1
     icon1.classList.remove("palette2_icon1"); //palette 2
     icon1.classList.remove("palette3_icon1"); //palette 3
@@ -245,6 +242,7 @@ function changeColors() {
     icon4.classList.remove("palette3_icon4"); //palette 3
     icon4.classList.add("palette4_icon4"); //palette 4
   }
+  paintCard();
 }
 
 palette1.addEventListener("click", changeColors);
@@ -252,89 +250,16 @@ palette2.addEventListener("click", changeColors);
 palette3.addEventListener("click", changeColors);
 palette4.addEventListener("click", changeColors);
 
-// ---------- ESTO ES CÓDIGO DE SEGURIDAD ---------
-
-//   //Palette 2
-
-//   if (palette2.checked === true) {
-//     //Name
-//     name.classList.remove("palette1_name"); //palette 1
-//     name.classList.add("palette2_name"); //palette 2
-//     name.classList.remove("palette3_name"); //palette 3
-//     name.classList.remove("palette4_name"); //palette 4
-
-//     //Border
-//     border.classList.remove("palette1_border"); //palette 1
-//     border.classList.add("palette2_border"); //palette 2
-//     border.classList.remove("palette3_border"); //palette 3
-//     border.classList.remove("palette4_border"); //palette 4
-
-//     //Circles
-//     circle.classList.remove("palette1_circle"); //palette 1
-//     circle.classList.add("palette2_circle"); //palette 2
-//     circle.classList.remove("palette3_circle"); //palette 3
-//     circle.classList.remove("palette4_circle"); //palette 4
-
-//     //Icon
-//     icon.classList.remove("palette1_icon"); //palette 1
-//     icon.classList.add("palette2_icon"); //palette 2
-//     icon.classList.remove("palette3_icon"); //palette 3
-//     icon.classList.remove("palette4_icon"); //palette 4
-//   }
-
-//   //Palette 3
-
-//   if (palette3.checked === true) {
-//     //Name
-//     name.classList.remove("palette1_name"); //palette 1
-//     name.classList.remove("palette2_name"); //palette 2
-//     name.classList.add("palette3_name"); //palette 3
-//     name.classList.remove("palette4_name"); //palette 4
-
-//     //Border
-//     border.classList.remove("palette1_border"); //palette 1
-//     border.classList.remove("palette2_border"); //palette 2
-//     border.classList.add("palette3_border"); //palette 3
-//     border.classList.remove("palette4_border"); //palette 4
-
-//     //Circles
-//     circle.classList.remove("palette1_circle"); //palette 1
-//     circle.classList.remove("palette2_circle"); //palette 2
-//     circle.classList.add("palette3_circle"); //palette 3
-//     circle.classList.remove("palette4_circle"); //palette 4
-
-//     //Icon
-//     icon.classList.remove("palette1_icon"); //palette 1
-//     icon.classList.remove("palette2_icon"); //palette 2
-//     icon.classList.add("palette3_icon"); //palette 3
-//     icon.classList.remove("palette4_icon"); //palette 4
-//   }
-
-//   //Palette 4
-
-//   if (palette4.checked === true) {
-//     //Name
-//     name.classList.remove("palette1_name"); //palette 1
-//     name.classList.remove("palette2_name"); //palette 2
-//     name.classList.remove("palette3_name"); //palette 3
-//     name.classList.add("palette4_name"); //palette 4
-
-//     //Border
-//     border.classList.remove("palette1_border"); //palette 1
-//     border.classList.remove("palette2_border"); //palette 2
-//     border.classList.remove("palette3_border"); //palette 3
-//     border.classList.add("palette4_border"); //palette 4
-
-//     //Circles
-//     circle.classList.remove("palette1_circle"); //palette 1
-//     circle.classList.remove("palette2_circle"); //palette 2
-//     circle.classList.remove("palette3_circle"); //palette 3
-//     circle.classList.add("palette4_circle"); //palette 4
-
-//     //Icon
-//     icon.classList.remove("palette1_icon"); //palette 1
-//     icon.classList.remove("palette2_icon"); //palette 2
-//     icon.classList.remove("palette3_icon"); //palette 3
-//     icon.classList.add("palette4_icon"); //palette 4
-//   }
-// }
+// ---- Activated by RESET button - Changes selected palette to default palette 1
+function erasePalettes() {
+  if (palette1.checked != true) {
+    palette1.checked = true;
+  } else if ((palette2.checked = true)) {
+    palette2.checked = false;
+  } else if ((palette3.checked = true)) {
+    palette3.checked = false;
+  } else if ((palette4.checked = true)) {
+    palette4.checked = false;
+  }
+  changeColors();
+}
