@@ -33,9 +33,9 @@ function saveField(event) {
 // ----- Paints form input values on card
 function paintCard() {
   document.querySelector(".js-nameCard").innerHTML =
-    form.name || "Nombre Apellido";
+    form.name || "Nombre completo";
   document.querySelector(".js-positionCard").innerHTML =
-    form.job || "Profesión";
+    form.job || "Puesto";
   document.querySelector(".js-tlCard").href = "tel:" + form.phone;
   document.querySelector(".js-emailCard").href = "mailto:" + form.email;
   document.querySelector(".js-linkedinCard").href = form.linkedin;
