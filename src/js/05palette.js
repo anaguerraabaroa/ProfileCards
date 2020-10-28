@@ -14,21 +14,23 @@ const palette4Value = parseInt(palette4.value);
 function selectPalette1() {
   form.palette = palette1Value;
   changeColors();
+  setLocalStorage();
 }
-
 function selectPalette2() {
   form.palette = palette2Value;
   changeColors();
+  setLocalStorage();
 }
-
 function selectPalette3() {
   form.palette = palette3Value;
   changeColors();
+  setLocalStorage();
 }
 
 function selectPalette4() {
   form.palette = palette4Value;
   changeColors();
+  setLocalStorage();
 }
 
 function changeColors() {
