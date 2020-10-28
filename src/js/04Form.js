@@ -70,5 +70,3 @@ const handleReset = function () {
   erasePalettes(); // ----- See function in 05palette.js - Line 258
 };
 resetButton.addEventListener("click", handleReset);
-
-// listenSaveField();
