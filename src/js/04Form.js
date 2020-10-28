@@ -11,7 +11,7 @@ let form = {
   email: "",
   linkedin: "",
   github: "",
-  photo: "",
+  photo: `url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)`,
 };
 
 function listenSaveField() {
@@ -26,7 +26,7 @@ function saveField(event) {
   inputId = event.currentTarget.id;
   form[inputId] = inputValue;
   paintCard();
-  // listenSaveField();
+  listenSaveField();
   setLocalStorage();
 }
 
@@ -54,7 +54,8 @@ const handleReset = function () {
   form.phone = "";
   form.linkedin = "";
   form.github = "";
-  form.photo = "";
+  form.photo =
+    "url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)";
   localStorage.removeItem("formData");
   for (const input of inputList) {
     input.value = "";
