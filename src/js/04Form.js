@@ -2,7 +2,7 @@
 
 let LinkedinLink = document.querySelector(".js-linkedinCard");
 
-const inputList = document.querySelectorAll(".js-field"); //formulario
+const inputList = document.querySelectorAll(".js-field"); // --- Form inputs
 const nameCard = document.querySelector(".js-nameCard");
 const positionCard = document.querySelector(".js-positionCard");
 let inputValue;

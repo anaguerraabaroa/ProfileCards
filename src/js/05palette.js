@@ -1,5 +1,6 @@
 "use strict";
 
+/// --- CREO QUE FALTA METER EN ALGÚN SITIO LA PALETA SELECCIONADA DENTRO DEL ARRAY FORM -- IGUAL QUE EN LA FUNCIÓN PAINTACARDS (L37 - 04FORM) ---> Y LO MISMO PARA LA FOTO
 const palette1 = document.querySelector(".js-paletteRadio1");
 const palette2 = document.querySelector(".js-paletteRadio2");
 const palette3 = document.querySelector(".js-paletteRadio3");
