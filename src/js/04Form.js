@@ -11,7 +11,7 @@ let form = {
   email: "",
   linkedin: "",
   github: "",
-  photo: `url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)`,
+  photo: `url(https://i.picasion.com/pic90/275001457e7c33cd30cbc32e7de2aabe.gif)`,
 };
 
 function listenSaveField() {
@@ -55,15 +55,15 @@ const handleReset = function () {
   form.linkedin = "";
   form.github = "";
   form.photo =
-    "url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)";
+    "url(https://i.picasion.com/pic90/275001457e7c33cd30cbc32e7de2aabe.gif)";
   localStorage.removeItem("formData");
   for (const input of inputList) {
     input.value = "";
   }
   profileImage.style.backgroundImage =
-    "url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)";
+    "url(https://i.picasion.com/pic90/275001457e7c33cd30cbc32e7de2aabe.gif)";
   profilePreview.style.backgroundImage =
-    "url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)";
+    "url(https://i.picasion.com/pic90/275001457e7c33cd30cbc32e7de2aabe.gif)";
 
   paintCard(); // ----- See function in line 38
   setLocalStorage(); // ----- See function in 09localStorage - Line 3
