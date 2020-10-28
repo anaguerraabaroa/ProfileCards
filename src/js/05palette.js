@@ -6,6 +6,31 @@ const palette2 = document.querySelector(".js-paletteRadio2");
 const palette3 = document.querySelector(".js-paletteRadio3");
 const palette4 = document.querySelector(".js-paletteRadio4");
 
+const palette1Value = parseInt(palette1.value);
+const palette2Value = parseInt(palette2.value);
+const palette3Value = parseInt(palette3.value);
+const palette4Value = parseInt(palette4.value);
+
+function selectPalette1() {
+  form.palette = palette1Value;
+  changeColors();
+}
+
+function selectPalette2() {
+  form.palette = palette2Value;
+  changeColors();
+}
+
+function selectPalette3() {
+  form.palette = palette3Value;
+  changeColors();
+}
+
+function selectPalette4() {
+  form.palette = palette4Value;
+  changeColors();
+}
+
 function changeColors() {
   const name = document.querySelector(".js-nameCard");
   const border1 = document.querySelector(".js-border1");
@@ -245,10 +270,10 @@ function changeColors() {
   paintCard();
 }
 
-palette1.addEventListener("click", changeColors);
-palette2.addEventListener("click", changeColors);
-palette3.addEventListener("click", changeColors);
-palette4.addEventListener("click", changeColors);
+palette1.addEventListener("click", selectPalette1);
+palette2.addEventListener("click", selectPalette2);
+palette3.addEventListener("click", selectPalette3);
+palette4.addEventListener("click", selectPalette4);
 
 // ---- Activated by RESET button - Changes selected palette to default palette 1
 function erasePalettes() {
