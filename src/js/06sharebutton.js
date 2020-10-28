@@ -10,6 +10,7 @@ const twitterCollapsable = document.querySelector(
   sendRequest();
 } */
 
+// --- Shows card link & Twitter link button
 function showLink() {
   btnShare.classList.add("btnClick");
   twitterCollapsable.classList.remove("hideCollapsable");

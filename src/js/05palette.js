@@ -1,5 +1,6 @@
 "use strict";
 
+/// --- CREO QUE FALTA METER EN ALGÚN SITIO LA PALETA SELECCIONADA DENTRO DEL ARRAY FORM -- IGUAL QUE EN LA FUNCIÓN PAINTACARDS (L37 - 04FORM) ---> Y LO MISMO PARA LA FOTO
 const palette1 = document.querySelector(".js-paletteRadio1");
 const palette2 = document.querySelector(".js-paletteRadio2");
 const palette3 = document.querySelector(".js-paletteRadio3");
@@ -55,8 +56,7 @@ function changeColors() {
     circle4.classList.remove("palette3_circle4"); //palette 3
     circle4.classList.remove("palette4_circle4"); //palette 4
 
-    //Icon
-
+    //Icons
     icon1.classList.add("palette1_icon1"); //palette 1
     icon1.classList.remove("palette2_icon1"); //palette 2
     icon1.classList.remove("palette3_icon1"); //palette 3
@@ -112,8 +112,7 @@ function changeColors() {
     circle4.classList.remove("palette3_circle4"); //palette 3
     circle4.classList.remove("palette4_circle4"); //palette 4
 
-    //Icon
-
+    //Icons
     icon1.classList.remove("palette1_icon1"); //palette 1
     icon1.classList.add("palette2_icon1"); //palette 2
     icon1.classList.remove("palette3_icon1"); //palette 3
@@ -169,8 +168,7 @@ function changeColors() {
     circle4.classList.add("palette3_circle4"); //palette 3
     circle4.classList.remove("palette4_circle4"); //palette 4
 
-    //Icon
-
+    //Icons
     icon1.classList.remove("palette1_icon1"); //palette 1
     icon1.classList.remove("palette2_icon1"); //palette 2
     icon1.classList.add("palette3_icon1"); //palette 3
@@ -226,8 +224,7 @@ function changeColors() {
     circle4.classList.remove("palette3_circle4"); //palette 3
     circle4.classList.add("palette4_circle4"); //palette 4
 
-    //Icon
-
+    //Icons
     icon1.classList.remove("palette1_icon1"); //palette 1
     icon1.classList.remove("palette2_icon1"); //palette 2
     icon1.classList.remove("palette3_icon1"); //palette 3
@@ -253,7 +250,7 @@ palette2.addEventListener("click", changeColors);
 palette3.addEventListener("click", changeColors);
 palette4.addEventListener("click", changeColors);
 
-// Activated by RESET button - Changes selected palette to default palette 1
+// ---- Activated by RESET button - Changes selected palette to default palette 1
 function erasePalettes() {
   if (palette1.checked != true) {
     palette1.checked = true;

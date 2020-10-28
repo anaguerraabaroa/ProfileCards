@@ -1,10 +1,6 @@
 "use strict";
 
-let LinkedinLink = document.querySelector(".js-linkedinCard");
-
-const inputList = document.querySelectorAll(".js-field"); //formulario
-const nameCard = document.querySelector(".js-nameCard");
-const positionCard = document.querySelector(".js-positionCard");
+const inputList = document.querySelectorAll(".js-field"); // --- Form inputs
 let inputValue;
 let inputId;
 let form = {
@@ -24,7 +20,7 @@ function listenSaveField() {
   }
 }
 
-// Equipara los valores introducidos en el formulario con los correspondientes elementos de la tarjeta
+// ----- Saves form input values in FORM array
 function saveField(event) {
   inputValue = event.currentTarget.value;
   inputId = event.currentTarget.id;
@@ -33,7 +29,7 @@ function saveField(event) {
   paintCard();
 }
 
-// Pinta los valores introducidos en el formulario en la tarjeta
+// ----- Paints form input values on card
 function paintCard() {
   document.querySelector(".js-nameCard").innerHTML =
     form.name || "Nombre Apellido";
@@ -46,8 +42,7 @@ function paintCard() {
     "https://github.com" + form.github;
 }
 
-//Reset
-
+// ----- Clears values on card & on inputs & resets default image
 const resetButton = document.querySelector(".js-resetBtn");
 
 const handleReset = function () {
@@ -67,8 +62,8 @@ const handleReset = function () {
   profilePreview.style.backgroundImage =
     "url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)";
 
-  setLocalStorage();
-  paintCard();
-  erasePalettes(); // 05palette.js - Line 258
+  setLocalStorage(); // ----- See function in 09localStorage - Line 3
+  paintCard(); // ----- See function in line 38
+  erasePalettes(); // ----- See function in 05palette.js - Line 258
 };
 resetButton.addEventListener("click", handleReset);
