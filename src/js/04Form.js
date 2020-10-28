@@ -25,8 +25,9 @@ function saveField(event) {
   inputValue = event.currentTarget.value;
   inputId = event.currentTarget.id;
   form[inputId] = inputValue;
-  setLocalStorage();
   paintCard();
+  // listenSaveField();
+  setLocalStorage();
 }
 
 // ----- Paints form input values on card
@@ -40,6 +41,7 @@ function paintCard() {
   document.querySelector(".js-linkedinCard").href = form.linkedin;
   document.querySelector(".js-gitHubCard").href =
     "https://github.com" + form.github;
+  profileImage.style.backgroundImage = `url(${form.photo})`;
 }
 
 // ----- Clears values on card & on inputs & resets default image
@@ -62,8 +64,10 @@ const handleReset = function () {
   profilePreview.style.backgroundImage =
     "url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)";
 
-  setLocalStorage(); // ----- See function in 09localStorage - Line 3
   paintCard(); // ----- See function in line 38
+  setLocalStorage(); // ----- See function in 09localStorage - Line 3
   erasePalettes(); // ----- See function in 05palette.js - Line 258
 };
 resetButton.addEventListener("click", handleReset);
+
+// listenSaveField();
