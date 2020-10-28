@@ -35,7 +35,7 @@ function paintCard() {
   document.querySelector(".js-nameCard").innerHTML =
     form.name || "Nombre Apellido";
   document.querySelector(".js-positionCard").innerHTML =
-    form.job || "Front-end developer";
+    form.job || "Profesión";
   document.querySelector(".js-tlCard").href = "tel:" + form.phone;
   document.querySelector(".js-emailCard").href = "mailto:" + form.email;
   document.querySelector(".js-linkedinCard").href = form.linkedin;
