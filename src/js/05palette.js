@@ -253,7 +253,7 @@ palette2.addEventListener("click", changeColors);
 palette3.addEventListener("click", changeColors);
 palette4.addEventListener("click", changeColors);
 
-// Activated by RESET button - Changes selected palette to default palette 1
+// ---- Activated by RESET button - Changes selected palette to default palette 1
 function erasePalettes() {
   if (palette1.checked != true) {
     palette1.checked = true;
