@@ -56,8 +56,7 @@ function changeColors() {
     circle4.classList.remove("palette3_circle4"); //palette 3
     circle4.classList.remove("palette4_circle4"); //palette 4
 
-    //Icon
-
+    //Icons
     icon1.classList.add("palette1_icon1"); //palette 1
     icon1.classList.remove("palette2_icon1"); //palette 2
     icon1.classList.remove("palette3_icon1"); //palette 3
@@ -113,8 +112,7 @@ function changeColors() {
     circle4.classList.remove("palette3_circle4"); //palette 3
     circle4.classList.remove("palette4_circle4"); //palette 4
 
-    //Icon
-
+    //Icons
     icon1.classList.remove("palette1_icon1"); //palette 1
     icon1.classList.add("palette2_icon1"); //palette 2
     icon1.classList.remove("palette3_icon1"); //palette 3
@@ -170,8 +168,7 @@ function changeColors() {
     circle4.classList.add("palette3_circle4"); //palette 3
     circle4.classList.remove("palette4_circle4"); //palette 4
 
-    //Icon
-
+    //Icons
     icon1.classList.remove("palette1_icon1"); //palette 1
     icon1.classList.remove("palette2_icon1"); //palette 2
     icon1.classList.add("palette3_icon1"); //palette 3
@@ -227,8 +224,7 @@ function changeColors() {
     circle4.classList.remove("palette3_circle4"); //palette 3
     circle4.classList.add("palette4_circle4"); //palette 4
 
-    //Icon
-
+    //Icons
     icon1.classList.remove("palette1_icon1"); //palette 1
     icon1.classList.remove("palette2_icon1"); //palette 2
     icon1.classList.remove("palette3_icon1"); //palette 3
