@@ -28,39 +28,39 @@ function getJSONFromInputs(inputs) {
   }, {});
 } */
 
-const twitterUrl = document.querySelector(
-  ".collapsableShare__createLink--twitterLink"
-);
+// const twitterUrl = document.querySelector(
+//   ".collapsableShare__createLink--twitterLink"
+// );
 
 /* function sendData() {
   sendRequest(form);
 } */
 
-function sendRequest() {
-  fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/", {
-    method: "POST",
-    body: JSON.stringify(form),
-    headers: {
-      "content-type": "application/json",
-    },
-  })
-    .then(function (resp) {
-      return resp.json();
-    })
-    .then(function (result) {
-      showURL(result);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-}
+// function sendRequest() {
+//   fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/", {
+//     method: "POST",
+//     body: JSON.stringify(form),
+//     headers: {
+//       "content-type": "application/json",
+//     },
+//   })
+//     .then(function (resp) {
+//       return resp.json();
+//     })
+//     .then(function (result) {
+//       showURL(result);
+//     })
+//     .catch(function (error) {
+//       console.log(error);
+//     });
+// }
 
-function showURL(result) {
-  if (result.success) {
-    twitterUrl.innerHTML =
-      "<a href=" + result.cardURL + ">" + result.cardURL + "</a>";
-  } else {
-    twitterUrl.innerHTML = "ERROR:" + result.error;
-  }
-  showLink();
-}
+// function showURL(result) {
+//   if (result.success) {
+//     twitterUrl.innerHTML =
+//       "<a href=" + result.cardURL + ">" + result.cardURL + "</a>";
+//   } else {
+//     twitterUrl.innerHTML = "ERROR:" + result.error;
+//   }
+//   showLink();
+// }

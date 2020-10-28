@@ -16,4 +16,4 @@ function showLink() {
   twitterCollapsable.classList.remove("hideCollapsable");
 }
 
-btnShare.addEventListener("click", sendRequest);
+btnShare.addEventListener("click", showLink);
