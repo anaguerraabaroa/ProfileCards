@@ -8,11 +8,11 @@ This is a profile cards app developed with `HTML5` , `CSS3` and `JavaScript`.
 
 This website has been developed by DevilAPPers Team:
 
-- Almudena Blanco: @almudenabr
-- Emma Cebada: @Emma-cebada
-- Ana Guerra: @anaguerraabaroa
-- Celia Martín: @Celiamf
-- Irene Rueda: @IreneRuedaVega
+- **Almudena Blanco:** @almudenabr
+- **Emma Cebada:** @Emma-cebada
+- **Ana Guerra:** @anaguerraabaroa
+- **Celia Martín:** @Celiamf
+- **Irene Rueda:** @IreneRuedaVega
 
 ## **Quick start guide**
 
