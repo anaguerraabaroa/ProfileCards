@@ -76,7 +76,7 @@ git push
 ## **Folder Structure**
 
 ```
-Codeflix
+ProfileCards
 ├── docs
 ├── node_modules
 ├── src
