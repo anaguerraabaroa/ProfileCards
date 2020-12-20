@@ -1,3 +1,5 @@
+![Profile Cards Banner](https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-halloween-banner-background-illustration-backgroundpumpkinyellownighthalloween-image_61816.jpg)
+
 # **ProfileCards**
 
 Module 2 team project of the Adalab Digital Frontend Development Bootcamp
