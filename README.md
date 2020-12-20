@@ -8,11 +8,11 @@ This is a profile cards app developed with `HTML5` , `CSS3` and `JavaScript`.
 
 This website has been developed by DevilAPPers Team:
 
-- **Almudena Blanco:** @almudenabr
-- **Emma Cebada:** @Emma-cebada
-- **Ana Guerra:** @anaguerraabaroa
-- **Celia Martín:** @Celiamf
-- **Irene Rueda:** @IreneRuedaVega
+- **Almudena Blanco:** [@almudenabr](https://github.com/almudenabr)
+- **Emma Cebada:** [@Emma-cebada](https://github.com/Emma-cebada)
+- **Ana Guerra:** [@anaguerraabaroa](https://github.com/anaguerraabaroa)
+- **Celia Martín:** [@Celiamf](https://github.com/Celiamf)
+- **Irene Rueda:** [@IreneRuedaVega](https://github.com/IreneRuedaVega)
 
 ## **Quick start guide**
 
@@ -22,7 +22,7 @@ Instructions to start this project:
 
 This project is run with Adalab Starter Kit [**here**](https://github.com/Adalab/adalab-web-starter-kit).
 
-In order to use this kit it is needed to previously install [`**node.js**`](https://nodejs.org/es/), [`**git**`](https://git-scm.com/) and [`**gulp.js**`](https://gulpjs.com/) to automate tasks and control project versions.
+In order to use this kit it is needed to previously install [**`node.js`**](https://nodejs.org/es/), [**`git`**](https://git-scm.com/) and [**`gulp.js`**](https://gulpjs.com/) to automate tasks and control project versions.
 
 ### **Installation**
 
@@ -151,6 +151,67 @@ ProfileCards
 ├── README.md
 └── robots.txt
 ```
+
+## **Listeners and functions**
+
+### **Collapsables**
+
+- **Event listener:** arrowList[i].addEventListener("click", getCollapsable)
+- **Handle collapsables and turn arrows:** function getCollapsable(event)
+- **Event listener share section:** btnShare.addEventListener("click", createCard)
+- **Handle card link and Twitter button:** function showLink()
+- **Event listener share section border:** menu.addEventListener("click", shareBorder)
+- **Handle share section border:** function shareBorder()
+
+### **Palettes**
+
+- **Event listener:**
+  - palette1.addEventListener("click", selectPalette1)
+  - palette2.addEventListener("click", selectPalette2)
+  - palette3.addEventListener("click", selectPalette3)
+  - palette4.addEventListener("click", selectPalette4)
+- **Handle selected colour palette:** function changeColors()
+- **Paint colour palette on the profile card:**
+  - function selectPalette1()
+  - function selectPalette2()
+  - function selectPalette3()
+  - function selectPalette4()
+- **Reset colour palettes:** function erasePalettes()
+
+### **Form**
+
+- **Event listener:** function listenSaveField()
+- **Handle form fields data:** function saveField(event)
+- **Paint form fields data on the profile card:** function paintCard()
+
+### **Form image**
+
+- **Event listener image upload :** uploadBtn.addEventListener("click", fakeFileClick)
+- **Handle image upload:** function fakeFileClick()
+- **Event listener get image :** fileField.addEventListener("change", getImage)
+- **Handle get image:** function getImage(e)
+- **Paint image on the profile card**: function writeImage()
+
+### **Reset**
+
+- **Event listener:** resetButton.addEventListener("click", handleReset)
+- **Handle reset:** const handleReset
+
+### **Create card**
+
+- **Event listener:** btnShare.addEventListener("click", createCard)
+- **Handle collapsable create card:** function showLink()
+- **Handle function create card and send request to API:** function createCard()
+
+### **Fetch request**
+
+- **Handle API request:** function createCard()
+- **Paint API response:** function showURL(result)
+
+### **LocalStorage**
+
+- **Set data in LocalStorage:** function setLocalStorage()
+- **Get data from LocalStorage:** function getLocalStorage()
 
 ## **Result**
 
