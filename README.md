@@ -67,7 +67,7 @@ git push
 - Generator card page
 - Collapsable design sections: colour palettes, personal data form and create profile card
 - Control patterns on form inputs
-- Paint data on card while it is being filled
+- Render data on card while it is being filled
 - Keep data on LocalStorage
 - Reset button to remove data from design sections, card and LocalStorage
 - Send data to APIRest and get a link with filled profile card
@@ -171,7 +171,7 @@ ProfileCards
   - palette3.addEventListener("click", selectPalette3)
   - palette4.addEventListener("click", selectPalette4)
 - **Handle selected colour palette:** function changeColors()
-- **Paint colour palette on the profile card:**
+- **Render colour palette on the profile card:**
   - function selectPalette1()
   - function selectPalette2()
   - function selectPalette3()
@@ -182,7 +182,7 @@ ProfileCards
 
 - **Event listener:** function listenSaveField()
 - **Handle form fields data:** function saveField(event)
-- **Paint form fields data on the profile card:** function paintCard()
+- **Render form fields data on the profile card:** function paintCard()
 
 ### **Form image**
 
@@ -190,7 +190,7 @@ ProfileCards
 - **Handle image upload:** function fakeFileClick()
 - **Event listener get image :** fileField.addEventListener("change", getImage)
 - **Handle get image:** function getImage(e)
-- **Paint image on the profile card**: function writeImage()
+- **Render image on the profile card**: function writeImage()
 
 ### **Reset**
 
@@ -206,7 +206,7 @@ ProfileCards
 ### **Fetch request**
 
 - **Handle API request:** function createCard()
-- **Paint API response:** function showURL(result)
+- **Render API response:** function showURL(result)
 
 ### **LocalStorage**
 
