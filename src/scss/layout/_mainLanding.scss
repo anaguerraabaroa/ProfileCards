@@ -60,7 +60,7 @@
     border-radius: 21px;
     margin-bottom: 30px;
     &:hover {
-      background-color: lighten($colorPal1Dark, 15%);
+      background-color: lighten($colorPrimary, 15%);
       cursor: pointer;
     }
 
@@ -71,7 +71,6 @@
       font-family: $fontPrimary;
       font-size: 16px;
       padding-top: 5px 2px 5px 0px;
-      // padding-bottom: 5px;
     }
   }
 }

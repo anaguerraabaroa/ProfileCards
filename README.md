@@ -6,6 +6,8 @@ Module 2 team project of the Adalab Digital Frontend Development Bootcamp.
 
 This is a profile cards app developed with [<img src = "https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white">](https://html.spec.whatwg.org/) [<img src = "https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white">](https://www.w3.org/Style/CSS/) and [<img src = "https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black">](https://www.ecma-international.org/ecma-262/).
 
+**NOTE**: [**original project**](https://github.com/Adalab/project-promo-k-module-2-team-6) has been updated to improve development and design issues.
+
 ## **Authors**
 
 This website has been developed by DevilAPPers Team:
@@ -100,24 +102,18 @@ ProfileCards
 │   │    ├── logo-awesome-profile-cards.svg
 │   │    └── logo-devilappers.svg
 │   ├── js
-│   │    ├── 01main.js
-│   │    ├── 02get-avatar.js
-│   │    ├── 03collapsables.js
-│   │    ├── 04Form.js
-│   │    ├── 05palette.js
-│   │    ├── 06sharebutton.js
-│   │    ├── 07shareborder.js
-│   │    ├── 08Fetch.js
-│   │    └── 09LocalStorage.js
+│   │    ├── 01collapsables.js
+│   │    ├── 02palettes.js
+│   │    ├── 03form.js
+│   │    ├── 04card-image.js
+│   │    ├── 05share.js
+│   │    ├── 06fetch.js
+│   │    └── 07LocalStorage.js
 │   └── scss
 │       ├── components
-│       │   ├── _arrow.scss
-│       │   ├── _code.scss
 │       │   ├── _colorOptions.scss
-│       │   ├── _hidden.scss
-│       │   ├── _links.scss
 │       │   ├── _mainForm.scss
-│       │   └── _menu.scss
+│       │   └── _mainOptionsMenu.scss
 │       ├── core
 │       │   ├── _reset.scss
 │       │   └── _variables.scss
@@ -152,10 +148,6 @@ ProfileCards
 
 - **Event listener:** arrowList[i].addEventListener("click", getCollapsable)
 - **Handle collapsables and turn arrows:** function getCollapsable(event)
-- **Event listener share section:** btnShare.addEventListener("click", createCard)
-- **Handle card link and Twitter button:** function showLink()
-- **Event listener share section border:** menu.addEventListener("click", shareBorder)
-- **Handle share section border:** function shareBorder()
 
 ### **Palettes**
 
@@ -164,43 +156,45 @@ ProfileCards
   - palette2.addEventListener("click", selectPalette2)
   - palette3.addEventListener("click", selectPalette3)
   - palette4.addEventListener("click", selectPalette4)
-- **Handle selected colour palette:** function changeColors()
-- **Render colour palette on the profile card:**
+- **Handle select palette:**
   - function selectPalette1()
   - function selectPalette2()
   - function selectPalette3()
   - function selectPalette4()
-- **Reset colour palettes:** function erasePalettes()
+- **Render selected palette on the profile card:** function renderPalette()
+- **Reset palettes:** function resetPalettes()
 
 ### **Form**
 
-- **Event listener:** function listenSaveField()
+- **Save form field event listener:** function listenSaveField()
 - **Handle form fields data:** function saveField(event)
-- **Render form fields data on the profile card:** function paintCard()
-
-### **Form image**
-
-- **Event listener image upload :** uploadBtn.addEventListener("click", fakeFileClick)
-- **Handle image upload:** function fakeFileClick()
-- **Event listener get image :** fileField.addEventListener("change", getImage)
-- **Handle get image:** function getImage(e)
-- **Render image on the profile card**: function writeImage()
-
-### **Reset**
-
-- **Event listener:** resetButton.addEventListener("click", handleReset)
+- **Render form fields data on the profile card:** renderCard()
+- **Reset button event listener:** resetButton.addEventListener("click", handleReset)
 - **Handle reset:** const handleReset
+
+### **Card image**
+
+- **Upload image event listener:** uploadBtn.addEventListener("click", fakeFileClick)
+- **Handle an automatic click on hidden input when an image is uploaded:** function fakeFileClick()
+- **Get image event listener:** fileField.addEventListener("change", getImage)
+- **Handle get image from hidden input:** function getImage(e)
+- **Render image on the profile card**: function writeImage()
 
 ### **Create card**
 
-- **Event listener:** btnShare.addEventListener("click", createCard)
-- **Handle collapsable create card:** function showLink()
+- **Share collapsable container event listener:** shareCollapsableBorder.addEventListener("click", hideShareBorder);
+- **Handle share collapsable container border:** function hideShareBorder()
+- **Create card button event listener:** btnShare.addEventListener("click", createCard)
+- **Handle collapsable card link and change create card button colour:** function showLink()
 - **Handle function create card and send request to API:** function createCard()
 
-### **Fetch request**
+### **Fetch**
 
-- **Handle API request:** function createCard()
+- **Send API request event listener:** createCardbtn.addEventListener("click", sendRequest)
+- **Handle API request:** sendRequest()
 - **Render API response:** function showURL(result)
+- **Twitter button event listener:** twitterButton.addEventListener("click", createTwitterLink)
+- **Share card link on Twitter:** function createTwitterLink(result)
 
 ### **LocalStorage**
 

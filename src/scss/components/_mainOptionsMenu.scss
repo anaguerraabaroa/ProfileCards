@@ -38,6 +38,11 @@
   }
 }
 
+.rotateArrow {
+  transform: rotate(180deg);
+  transition: 1s;
+}
+
 .navForm,
 .navShare {
   border-top: 1px solid $colorBrand2;
@@ -45,4 +50,12 @@
 
 .navShare {
   border-bottom: 1px solid $colorBrand2;
+}
+
+.hideCollapsable {
+  display: none;
+}
+
+.hideLineShare {
+  border-bottom: none;
 }

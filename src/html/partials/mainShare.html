@@ -3,24 +3,33 @@
     src="./menu.html"
     icon="fas fa-share-alt"
     title="Comparte"
-    navClass="navShare"
+    navClass="navShare js-navShare"
     id="share"
   >
   </include>
-  <section class="collapsableShare hideCollapsable section-share">
-    <button class="collapsableShare__btn">
+  <section
+    class="collapsableShare hideCollapsable section-share js-section-share"
+  >
+    <button class="collapsableShare__btn js-createCard-btn">
       <i class="far fa-address-card" aria-hidden="true"></i>
       Crear tarjeta
     </button>
-    <div class="collapsableShare__createLink hideCollapsable">
+    <div
+      class="collapsableShare__createLink hideCollapsable js-createCard-link"
+    >
       <p class="collapsableShare__createLink--title">
         La tarjeta ha sido creada:
       </p>
-      <span class="collapsableShare__createLink--twitterLink"></span>
       <a
-        class="collapsableShare__createLink--twitterButton"
+        class="collapsableShare__createLink--cardLink js-card-link"
+        href=""
         target="_blank"
-        href="https://twitter.com/Adalab_Digital"
+      >
+      </a>
+      <a
+        class="collapsableShare__createLink--twitterButton js-twitter-btn"
+        href=""
+        target="_blank"
       >
         <i class="fab fa-twitter" aria-hidden="true"></i>
         Compartir en Twitter

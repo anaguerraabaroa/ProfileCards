@@ -7,13 +7,11 @@
     id="form"
   >
   </include>
-  <!------- Revisar cómo enlazar el formulario con JavaScript ---------->
-  <section class="hideCollapsable section-form">
-    <!--A esta clase hay que QUITARLE hideCollapsable con JS para desplegarla-->
+  <section class="hideCollapsable section-form js-section-form">
     <form class="form" action="" method="POST">
       <label class="form__label" for="fullName">Nombre completo</label>
       <input
-        class="form__input js-field"
+        class="form__input js-field js-nameInput"
         id="name"
         type="text"
         name="name"
@@ -22,7 +20,7 @@
       />
       <label class="form__label" for="position">Puesto</label>
       <input
-        class="form__input js-field"
+        class="form__input js-field js-positionInput"
         id="job"
         type="text"
         name="job"
@@ -37,7 +35,7 @@
           </button>
           <input
             type="file"
-            name=""
+            name="img"
             id="photo"
             class="action__hiddenField js__profile-upload-btn"
             required
@@ -49,7 +47,7 @@
       </div>
       <label class="form__label" for="emailAddress">E-mail</label>
       <input
-        class="form__input js-field"
+        class="form__input js-field js-emailInput"
         id="email"
         type="email"
         name="email"
@@ -58,7 +56,7 @@
       />
       <label class="form__label" for="telephone">Teléfono</label>
       <input
-        class="form__input js-field"
+        class="form__input js-field js-tlInput"
         id="phone"
         type="tel"
         name="phone"
@@ -68,19 +66,21 @@
 
       <label class="form__label" for="linkedin">LinkedIn</label>
       <input
-        class="form__input js-field"
+        class="form__input js-field js-linkedinInput"
         id="linkedin"
         type="text"
         name="linkedin"
         placeholder="Ej.: linkedin.com/in/malefica"
+        required
       />
       <label class="form__label" for="github">GitHub</label>
       <input
-        class="form__input js-field"
+        class="form__input js-field js-gitHubInput"
         id="github"
         type="text"
         name="github"
-        placeholder="Ej.: @malefica"
+        placeholder="Ej.: malefica"
+        required
       />
     </form>
   </section>

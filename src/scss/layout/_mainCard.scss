@@ -1,6 +1,7 @@
 .mainCard {
-  background: url("https://thumbs.dreamstime.com/b/elemento-de-halloween-con-la-plantilla-de-la-frontera-y-del-fondo-78776931.jpg")
+  background: url("https://motionarray.imgix.net/preview-308936-VKmXGSoKSv-high_0006.jpg")
     center center no-repeat;
+  background-size: cover;
   padding: 38px 35px 40px 45px;
   display: flex;
   justify-content: center;
@@ -23,10 +24,9 @@
     font-size: 12px;
     line-height: 20px;
     text-transform: uppercase;
-    color: $colorSecondary;
+    color: $colorBg;
     &:hover {
-      color: $colorWhite;
-      background-color: $colorBrand1;
+      background-color: $colorPrimary;
       cursor: pointer;
     }
 
@@ -58,7 +58,8 @@
       padding: 0px 0px 0px 20px;
       border-left: 5px solid $colorPal1Medium;
     }
-    // --------- PROFILE (IMAGE) START ----------
+
+    // Profile image
     .profile {
       margin: 10px auto;
       display: flex;
@@ -73,7 +74,6 @@
         height: 200px;
       }
     }
-    // --------- PROFILE (IMAGE) END ----------
 
     &--list {
       display: flex;
