@@ -60,7 +60,7 @@
     border-radius: 21px;
     margin-bottom: 30px;
     &:hover {
-      background-color: lighten($colorPrimary, 15%);
+      background-color: $colorPrimary;
       cursor: pointer;
     }
 
