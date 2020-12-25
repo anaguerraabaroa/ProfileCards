@@ -52,13 +52,10 @@
               Profesión
             </h2>
             <div class="profile">
-              <!-- <div class="profile__image js__profile-image">
-                <img class="js-cardImg" src="" alt="" />
-              </div> -->
               <div
                 class="profile__image js__profile-image"
                 style="
-                  background-image: url(https://i.picasion.com/pic90/275001457e7c33cd30cbc32e7de2aabe.gif);
+                  background-image: url(https://i.picasion.com/pic90/02b56d6431f0a6fe7082958c95d7788d.gif);
                 "
               ></div>
             </div>
@@ -117,7 +114,9 @@
             </button>
           </nav>
 
-          <section class="collapsableDesign hideCollapsable section-design">
+          <section
+            class="collapsableDesign hideCollapsable section-design js-section-design"
+          >
             <h4 class="collapsableDesign__title">Colores</h4>
             <div class="collapsableDesign__palette">
               <label for="palette1" class="palette1">
@@ -185,13 +184,11 @@
             </button>
           </nav>
 
-          <!------- Revisar cómo enlazar el formulario con JavaScript ---------->
-          <section class="hideCollapsable section-form">
-            <!--A esta clase hay que QUITARLE hideCollapsable con JS para desplegarla-->
+          <section class="hideCollapsable section-form js-section-form">
             <form class="form" action="" method="POST">
               <label class="form__label" for="fullName">Nombre completo</label>
               <input
-                class="form__input js-field"
+                class="form__input js-field js-nameInput"
                 id="name"
                 type="text"
                 name="name"
@@ -200,7 +197,7 @@
               />
               <label class="form__label" for="position">Puesto</label>
               <input
-                class="form__input js-field"
+                class="form__input js-field js-positionInput"
                 id="job"
                 type="text"
                 name="job"
@@ -215,7 +212,7 @@
                   </button>
                   <input
                     type="file"
-                    name=""
+                    name="img"
                     id="photo"
                     class="action__hiddenField js__profile-upload-btn"
                     required
@@ -227,7 +224,7 @@
               </div>
               <label class="form__label" for="emailAddress">E-mail</label>
               <input
-                class="form__input js-field"
+                class="form__input js-field js-emailInput"
                 id="email"
                 type="email"
                 name="email"
@@ -236,7 +233,7 @@
               />
               <label class="form__label" for="telephone">Teléfono</label>
               <input
-                class="form__input js-field"
+                class="form__input js-field js-tlInput"
                 id="phone"
                 type="tel"
                 name="phone"
@@ -246,26 +243,28 @@
 
               <label class="form__label" for="linkedin">LinkedIn</label>
               <input
-                class="form__input js-field"
+                class="form__input js-field js-linkedinInput"
                 id="linkedin"
                 type="text"
                 name="linkedin"
                 placeholder="Ej.: linkedin.com/in/malefica"
+                required
               />
               <label class="form__label" for="github">GitHub</label>
               <input
-                class="form__input js-field"
+                class="form__input js-field js-gitHubInput"
                 id="github"
                 type="text"
                 name="github"
-                placeholder="Ej.: @malefica"
+                placeholder="Ej.: malefica"
+                required
               />
             </form>
           </section>
         </div>
 
         <div>
-          <nav class="mainMenu navShare">
+          <nav class="mainMenu navShare js-navShare">
             <div class="mainMenu__iconTitle">
               <span class="mainMenu__iconTitle--icon"
                 ><i class="fas fa-share-alt" aria-hidden="true"></i>
@@ -277,20 +276,29 @@
             </button>
           </nav>
 
-          <section class="collapsableShare hideCollapsable section-share">
-            <button class="collapsableShare__btn">
+          <section
+            class="collapsableShare hideCollapsable section-share js-section-share"
+          >
+            <button class="collapsableShare__btn js-createCard-btn">
               <i class="far fa-address-card" aria-hidden="true"></i>
               Crear tarjeta
             </button>
-            <div class="collapsableShare__createLink hideCollapsable">
+            <div
+              class="collapsableShare__createLink hideCollapsable js-createCard-link"
+            >
               <p class="collapsableShare__createLink--title">
                 La tarjeta ha sido creada:
               </p>
-              <span class="collapsableShare__createLink--twitterLink"></span>
               <a
-                class="collapsableShare__createLink--twitterButton"
+                class="collapsableShare__createLink--cardLink js-card-link"
+                href=""
                 target="_blank"
-                href="https://twitter.com/Adalab_Digital"
+              >
+              </a>
+              <a
+                class="collapsableShare__createLink--twitterButton js-twitter-btn"
+                href=""
+                target="_blank"
               >
                 <i class="fab fa-twitter" aria-hidden="true"></i>
                 Compartir en Twitter
