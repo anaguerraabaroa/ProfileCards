@@ -108,7 +108,7 @@ ProfileCards
 │   │    ├── 04card-image.js
 │   │    ├── 05create-card.js
 │   │    ├── 06fetch.js
-│   │    └── 07LocalStorage.js
+│   │    └── 07localStorage.js
 │   └── scss
 │       ├── components
 │       │   ├── _colorOptions.scss
