@@ -6,7 +6,7 @@ Module 2 team project of the Adalab Digital Frontend Development Bootcamp.
 
 This is a profile cards app developed with [<img src = "https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white">](https://html.spec.whatwg.org/) [<img src = "https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white">](https://www.w3.org/Style/CSS/) and [<img src = "https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black">](https://www.ecma-international.org/ecma-262/).
 
-**NOTE**: [**original project**](https://github.com/Adalab/project-promo-k-module-2-team-6) has been updated to improve development and design issues.
+**NOTE**: [**original project**](https://github.com/Adalab/project-promo-k-module-2-team-6) has been updated to improve development and design features.
 
 ## **Authors**
 
