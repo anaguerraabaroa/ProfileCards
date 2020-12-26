@@ -66,7 +66,7 @@ const handleReset = function () {
     "url(https://i.picasion.com/pic90/02b56d6431f0a6fe7082958c95d7788d.gif)";
 
   renderCard();
-  resetPalettes();
+  resetPalette();
   setLocalStorage();
 };
 

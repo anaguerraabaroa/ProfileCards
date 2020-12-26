@@ -152,17 +152,14 @@ ProfileCards
 ### **Palettes**
 
 - **Event listener:**
-  - palette1.addEventListener("click", selectPalette1)
-  - palette2.addEventListener("click", selectPalette2)
-  - palette3.addEventListener("click", selectPalette3)
-  - palette4.addEventListener("click", selectPalette4)
+  - palette1.addEventListener("click", selectPalette)
+  - palette2.addEventListener("click", selectPalette)
+  - palette3.addEventListener("click", selectPalette)
+  - palette4.addEventListener("click", selectPalette)
 - **Handle select palette:**
-  - function selectPalette1()
-  - function selectPalette2()
-  - function selectPalette3()
-  - function selectPalette4()
-- **Render selected palette on the profile card:** function renderPalette()
-- **Reset palettes:** function resetPalettes()
+  - function selectPalette()
+- **Render selected palette on card:** function renderPalette()
+- **Reset palettes:** function resetPalette()
 
 ### **Form**
 

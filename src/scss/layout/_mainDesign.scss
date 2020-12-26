@@ -46,7 +46,7 @@
   outline: none;
 }
 
-.palette1 {
+.paletteGreen {
   display: flex;
   flex-direction: row;
   &__color1 {
@@ -68,7 +68,7 @@
     margin-top: -4px;
   }
 }
-.palette2 {
+.paletteRed {
   display: flex;
   flex-direction: row;
   &__color1 {
@@ -90,7 +90,7 @@
     margin-top: -4px;
   }
 }
-.palette3 {
+.paletteBlue {
   display: flex;
   flex-direction: row;
   &__color1 {
@@ -113,7 +113,7 @@
   }
 }
 
-.palette4 {
+.paletteHalloween {
   display: flex;
   flex-direction: row;
   &__color1 {
