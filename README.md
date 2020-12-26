@@ -200,6 +200,6 @@ ProfileCards
 
 ## **Result**
 
-![Landing Mobile](./src/images/landing_mobile.jpg) ![Landing Tablet](./src/images/landing_tablet.jpg) ![Landing Tablet](./src/images/landing_desktop.jpg)
+![Landing Mobile](./src/images/landing_mobile.png) ![Landing Tablet](./src/images/landing_tablet.png) ![Landing Tablet](./src/images/landing_desktop.png)
 
 ![Card Generator Mobile](./src/images/card_mobile.png) ![Card Generator Tablet](./src/images/card_tablet.png) ![Card Generator Desktop](./src/images/card_desktop.png)
