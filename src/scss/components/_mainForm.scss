@@ -28,12 +28,11 @@
     height: 30px;
     border: solid 1px $colorPal1Light;
     margin-bottom: 20px;
-
     &[placeholder] {
       font-family: $fontPrimary;
       font-size: 14px;
       padding: 3px 0 3px 9px;
-      color: $colorBrand6;
+      color: $colorPalHwDark;
     }
   }
   &__wrapperImage {
