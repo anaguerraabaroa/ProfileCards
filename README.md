@@ -203,3 +203,7 @@ ProfileCards
 ![Landing Mobile](./src/images/landing_mobile.png) ![Landing Tablet](./src/images/landing_tablet.png) ![Landing Tablet](./src/images/landing_desktop.png)
 
 ![Card Generator Mobile](./src/images/card_mobile.png) ![Card Generator Tablet](./src/images/card_tablet.png) ![Card Generator Desktop](./src/images/card_desktop.png)
+
+## **License**
+
+This project is licensed under [**MIT License**](https://spdx.org/licenses/MIT.html).
