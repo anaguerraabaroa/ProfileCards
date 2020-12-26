@@ -27,10 +27,6 @@ function selectPalette() {
 
 // Render selected palette on card
 function renderPalette() {
-  cardContainer.classList.remove("palette1");
-  cardContainer.classList.remove("palette2");
-  cardContainer.classList.remove("palette3");
-  cardContainer.classList.remove("palette4");
   if (form.palette === 1) {
     cardContainer.classList.add("palette1");
   }
