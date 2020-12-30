@@ -41,7 +41,7 @@ Run `npm start` on the terminal:
 1. Open the project on the browser using a local server.
 2. Refresh browser everytime files contained in `/src` folder are updated.
 
-### **Deployment**
+### **Updating**
 
 1. Run these commands to update changes on the project:
 
