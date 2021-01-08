@@ -25,6 +25,12 @@ function selectPalette() {
   setLocalStorage();
 }
 
+// Palette listeners
+palette1.addEventListener("click", selectPalette);
+palette2.addEventListener("click", selectPalette);
+palette3.addEventListener("click", selectPalette);
+palette4.addEventListener("click", selectPalette);
+
 // Render selected palette on card
 function renderPalette() {
   cardContainer.classList.add("palette1");
@@ -44,12 +50,6 @@ function renderPalette() {
     cardContainer.classList.add("palette4");
   }
 }
-
-// Palette listeners
-palette1.addEventListener("click", selectPalette);
-palette2.addEventListener("click", selectPalette);
-palette3.addEventListener("click", selectPalette);
-palette4.addEventListener("click", selectPalette);
 
 // Reset selected palette to default palette 1
 function resetPalette() {
