@@ -57,7 +57,7 @@ git push
 
 4. Project **[URL](https://anaguerraabaroa.github.io/ProfileCards/)** is also available on GitHub Pages.
 
-## **Exercise development requirements**
+## **Exercise features**
 
 - Landing page
 - Generator card page
