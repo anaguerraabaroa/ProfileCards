@@ -147,7 +147,7 @@ ProfileCards
 ### **Collapsables**
 
 - **Event listener:** arrowList[i].addEventListener("click", getCollapsable)
-- **Handle collapsables and turn arrows:** function getCollapsable(event)
+- **Handle collapsables and turn pumpkins:** function getCollapsable(event)
 
 ### **Palettes**
 
