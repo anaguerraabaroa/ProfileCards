@@ -10,7 +10,7 @@ This is a profile cards app developed with [<img src = "https://img.shields.io/b
 
 ## **Authors**
 
-This website has been developed by DevilAPPers Team:
+This project has been developed by DevilAPPers Team:
 
 - **Almudena Blanco:** [@almudenabr](https://github.com/almudenabr)
 - **Emma Cebada:** [@Emma-cebada](https://github.com/Emma-cebada)
@@ -57,7 +57,7 @@ git push
 
 4. Project **[URL](https://anaguerraabaroa.github.io/ProfileCards/)** is also available on GitHub Pages.
 
-## **Exercise features**
+## **Project features**
 
 - Landing page
 - Generator card page
