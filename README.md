@@ -198,7 +198,7 @@ ProfileCards
 - **Set data in LocalStorage:** function setLocalStorage()
 - **Get data from LocalStorage:** function getLocalStorage()
 
-## **Project captures**
+## **Screenshots**
 
 ![Landing Mobile](./src/images/landing_mobile.png) ![Landing Tablet](./src/images/landing_tablet.png) ![Landing Tablet](./src/images/landing_desktop.png)
 
