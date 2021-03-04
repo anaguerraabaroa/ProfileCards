@@ -10,14 +10,11 @@ const palette4 = document.querySelector(".js-paletteRadio4"); // Palette 4
 function selectPalette() {
   if (palette1.checked === true) {
     form.palette = 1;
-  }
-  if (palette2.checked === true) {
+  } else if (palette2.checked === true) {
     form.palette = 2;
-  }
-  if (palette3.checked === true) {
+  } else if (palette3.checked === true) {
     form.palette = 3;
-  }
-  if (palette4.checked === true) {
+  } else if (palette4.checked === true) {
     form.palette = 4;
   }
 
@@ -39,27 +36,24 @@ function renderPalette() {
   cardContainer.classList.remove("palette4");
   if (form.palette === 1) {
     cardContainer.classList.add("palette1");
-  }
-  if (form.palette === 2) {
+  } else if (form.palette === 2) {
     cardContainer.classList.add("palette2");
-  }
-  if (form.palette === 3) {
+  } else if (form.palette === 3) {
     cardContainer.classList.add("palette3");
-  }
-  if (form.palette === 4) {
+  } else if (form.palette === 4) {
     cardContainer.classList.add("palette4");
   }
 }
 
 // Reset selected palette to default palette 1
 function resetPalette() {
-  if (palette1.checked != true) {
-    palette1.checked = true;
-  } else if ((palette2.checked = true)) {
+  if (palette1.checked === true) {
+    palette1.checked = false;
+  } else if (palette2.checked === true) {
     palette2.checked = false;
-  } else if ((palette3.checked = true)) {
+  } else if (palette3.checked === true) {
     palette3.checked = false;
-  } else if ((palette4.checked = true)) {
+  } else if (palette4.checked === true) {
     palette4.checked = false;
   }
   renderPalette();

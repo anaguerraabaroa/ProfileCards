@@ -5,7 +5,7 @@ let inputValue; // Form input values
 let inputId; // Form input ids
 // Form input object
 let form = {
-  palette: 1,
+  palette: "",
   name: "",
   job: "",
   phone: "",
@@ -47,7 +47,7 @@ function renderCard() {
 
 // Reset form input values on card, form & localStorage
 const handleReset = function () {
-  form.palette = 1;
+  form.palette = "";
   form.name = "";
   form.job = "";
   form.email = "";
