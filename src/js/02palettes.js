@@ -47,8 +47,8 @@ function renderPalette() {
 
 // Reset selected palette to default palette 1
 function resetPalette() {
-  if (palette1.checked === true) {
-    palette1.checked = false;
+  if (palette1.checked !== true) {
+    palette1.checked = true;
   } else if (palette2.checked === true) {
     palette2.checked = false;
   } else if (palette3.checked === true) {
