@@ -1,6 +1,6 @@
 ![Profile Cards Banner](https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-halloween-banner-background-illustration-backgroundpumpkinyellownighthalloween-image_61816.jpg)
 
-# **ProfileCards**
+# **Profile Cards**
 
 Module 2 team project of the Adalab Digital Frontend Development Bootcamp.
 
@@ -55,7 +55,7 @@ git push
 
 3. Run again commands on step 1 to update changes on the project.
 
-4. Project **[URL](https://anaguerraabaroa.github.io/ProfileCards/)** is also available on GitHub Pages.
+4. Project **[URL](https://anaguerraabaroa.github.io/profile-cards/)** is also available on GitHub Pages.
 
 ## **Project features**
 
