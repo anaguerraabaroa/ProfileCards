@@ -72,7 +72,7 @@ git push
 ## **Folder Structure**
 
 ```
-ProfileCards
+Profile Cards
 ├── docs
 ├── node_modules
 ├── src
