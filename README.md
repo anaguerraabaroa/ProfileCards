@@ -1,4 +1,6 @@
-![Profile Cards Banner](https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-halloween-banner-background-illustration-backgroundpumpkinyellownighthalloween-image_61816.jpg)
+![Landing Mobile](./src/images/landing_mobile.png) ![Landing Tablet](./src/images/landing_tablet.png) ![Landing Tablet](./src/images/landing_desktop.png)
+
+![Card Generator Mobile](./src/images/card_mobile.png) ![Card Generator Tablet](./src/images/card_tablet.png) ![Card Generator Desktop](./src/images/card_desktop.png)
 
 # **Profile Cards**
 
@@ -91,13 +93,13 @@ Profile Cards
 │   │   ├── index.html
 │   │   └── profileCards.html
 │   ├── images
-│   │    ├── card_desktop.jpg
-│   │    ├── card_mobile.jpg
-│   │    ├── card_tablet.jpg
+│   │    ├── card_desktop.png
+│   │    ├── card_mobile.png
+│   │    ├── card_tablet.png
 │   │    ├── default_image.gif
-│   │    ├── landing_desktop.jpg
-│   │    ├── landing_mobile.jpg
-│   │    ├── landing_tablet.jpg
+│   │    ├── landing_desktop.png
+│   │    ├── landing_mobile.png
+│   │    ├── landing_tablet.png
 │   │    ├── logo-adalab.png
 │   │    ├── logo-awesome-profile-cards.svg
 │   │    └── logo-devilappers.svg
@@ -197,12 +199,6 @@ Profile Cards
 
 - **Set data in LocalStorage:** function setLocalStorage()
 - **Get data from LocalStorage:** function getLocalStorage()
-
-## **Screenshots**
-
-![Landing Mobile](./src/images/landing_mobile.png) ![Landing Tablet](./src/images/landing_tablet.png) ![Landing Tablet](./src/images/landing_desktop.png)
-
-![Card Generator Mobile](./src/images/card_mobile.png) ![Card Generator Tablet](./src/images/card_tablet.png) ![Card Generator Desktop](./src/images/card_desktop.png)
 
 ## **License**
 
