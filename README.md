@@ -57,7 +57,7 @@ npm start
 - Render data on card while it is being filled
 - Keep data on LocalStorage
 - Reset button to remove data from design sections, card and LocalStorage
-- Send data to APIRest and get a link with filled profile card
+- Send data to [**APIRest**](https://awesome-profile-cards.herokuapp.com/) and get a link with filled profile card
 - Button to share card on Twitter
 
 ## **Usage**
