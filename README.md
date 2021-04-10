@@ -6,11 +6,12 @@
 
 Module 2 team project of the Adalab Digital Frontend Development Bootcamp.
 
-This is a profile cards app developed with [<img src = "https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white">](https://html.spec.whatwg.org/) [<img src = "https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white">](https://www.w3.org/Style/CSS/) and [<img src = "https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black">](https://www.ecma-international.org/ecma-262/).
+This is a profile cards app developed with [<img src = "https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">](https://html.spec.whatwg.org/) [<img src="https://img.shields.io/badge/-SASS-cc6699?style=for-the-badge&logo=sass&logoColor=ffffff">](https://sass-lang.com/)
+[<img src = "https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">](https://www.w3.org/Style/CSS/) and [<img src = "https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">](https://www.ecma-international.org/ecma-262/)
 
 **NOTE**: [**original project**](https://github.com/Adalab/project-promo-k-module-2-team-6) has been updated to improve development and design features.
 
-## **Authors**
+## **DevilAPPers Team**
 
 This project has been developed by DevilAPPers Team:
 
@@ -24,40 +25,27 @@ This project has been developed by DevilAPPers Team:
 
 Instructions to start this project:
 
-### **Pre-requirements**
+## Installation
 
-This project runs with Adalab Starter Kit [**here**](https://github.com/Adalab/adalab-web-starter-kit).
-
-In order to use this kit it is needed to previously install [<img src="https://img.shields.io/badge/-node.js-339933?style=flat&logo=node.js&logoColor=white">](https://nodejs.org/es/), [<img src="https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white">](https://git-scm.com/) and [<img src="https://img.shields.io/badge/-Gulp.js-CF4647?style=flat&logo=gulp&logoColor=white">](https://gulpjs.com/) to automate tasks and control project versions.
-
-### **Installation**
-
-1. Clone repository
-2. Open a terminal
-3. Run `npm install` on the terminal to install local dependencies
-
-### **Run project**
-
-Run `npm start` on the terminal:
-
-1. Open the project on the browser using a local server.
-2. Refresh browser everytime files contained in `/src` folder are updated.
-
-### **Updating**
-
-1. Run these commands to update changes on the project:
+- Clone repository:
 
 ```
-git add -A
-git commit -m "Message commit"
-git push
+git clone [repository]
 ```
 
-2. Run `npm run docs` to create `/docs` folder and the production environment version.
+- Install NPM packages and dependencies:
 
-3. Run again commands on step 1 to update changes on the project.
+```
+npm install
+```
 
-4. Project **[URL](https://anaguerraabaroa.github.io/profile-cards/)** is also available on GitHub Pages.
+- Run project on local server:
+
+```
+npm start
+```
+
+- **[Project URL](https://anaguerraabaroa.github.io/profile-cards/)** is also available on GitHub Pages.
 
 ## **Project features**
 
@@ -70,6 +58,270 @@ git push
 - Reset button to remove data from design sections, card and LocalStorage
 - Send data to APIRest and get a link with filled profile card
 - Button to share card on Twitter
+
+## **Usage**
+
+### **1. Collapsables**
+
+```javascript
+function getCollapsable(event) {
+  event.currentTarget.classList.toggle("rotateArrow");
+
+  const arrowId = event.currentTarget.id;
+  const section = document.querySelector(".section-" + arrowId);
+  section.classList.toggle("hideCollapsable");
+}
+```
+
+### **2. Palettes**
+
+- **Handle select palette:**
+
+```javascript
+function selectPalette() {
+  if (palette1.checked === true) {
+    form.palette = 1;
+  } else if (palette2.checked === true) {
+    form.palette = 2;
+  } else if (palette3.checked === true) {
+    form.palette = 3;
+  } else if (palette4.checked === true) {
+    form.palette = 4;
+  }
+
+  renderPalette();
+  setLocalStorage();
+}
+```
+
+- **Render selected palette on card:**
+
+```javascript
+function renderPalette() {
+  cardContainer.classList.add("palette1");
+  cardContainer.classList.remove("palette2");
+  cardContainer.classList.remove("palette3");
+  cardContainer.classList.remove("palette4");
+  if (form.palette === 1) {
+    cardContainer.classList.add("palette1");
+  } else if (form.palette === 2) {
+    cardContainer.classList.add("palette2");
+  } else if (form.palette === 3) {
+    cardContainer.classList.add("palette3");
+  } else if (form.palette === 4) {
+    cardContainer.classList.add("palette4");
+  }
+}
+```
+
+- **Reset palettes:**
+
+```javascript
+function resetPalette() {
+  if (palette1.checked !== true) {
+    palette1.checked = true;
+  } else if (palette2.checked === true) {
+    palette2.checked = false;
+  } else if (palette3.checked === true) {
+    palette3.checked = false;
+  } else if (palette4.checked === true) {
+    palette4.checked = false;
+  }
+  renderPalette();
+}
+```
+
+### **3. Form**
+
+- **Handle form fields data:**
+
+```javascript
+function saveField(event) {
+  inputValue = event.currentTarget.value;
+  inputId = event.currentTarget.id;
+  form[inputId] = inputValue;
+  renderCard();
+  setLocalStorage();
+}
+```
+
+- **Render form fields data on the profile card:**
+
+```javascript
+function renderCard() {
+  document.querySelector(".js-nameCard").innerHTML =
+    form.name || "Nombre completo";
+  document.querySelector(".js-positionCard").innerHTML = form.job || "Puesto";
+  document.querySelector(".js-tlCard").href = "tel:" + form.phone;
+  document.querySelector(".js-emailCard").href = "mailto:" + form.email;
+  document.querySelector(".js-linkedinCard").href = form.linkedin;
+  document.querySelector(".js-gitHubCard").href =
+    "https://github.com" + form.github;
+  profileImage.style.backgroundImage = `url(${form.photo})`;
+}
+```
+
+- **Handle reset form fields:**
+
+```javascript
+const handleReset = function () {
+  form.palette = 1;
+  form.name = "";
+  form.job = "";
+  form.email = "";
+  form.phone = "";
+  form.linkedin = "";
+  form.github = "";
+  form.photo =
+    "url(https://i.picasion.com/pic90/02b56d6431f0a6fe7082958c95d7788d.gif)";
+  localStorage.removeItem("formData");
+  for (const input of inputList) {
+    input.value = "";
+  }
+  profileImage.style.backgroundImage =
+    "url(https://i.picasion.com/pic90/02b56d6431f0a6fe7082958c95d7788d.gif)";
+  profilePreview.style.backgroundImage =
+    "url(https://i.picasion.com/pic90/02b56d6431f0a6fe7082958c95d7788d.gif)";
+
+  renderCard();
+  resetPalette();
+  setLocalStorage();
+};
+```
+
+### **4. Card image**
+
+- **Handle an automatic click on hidden input when an image is uploaded:**
+
+```javascript
+function fakeFileClick() {
+  fileField.click();
+}
+```
+
+- **Handle get image from hidden input:**
+
+```javascript
+function getImage(e) {
+  const myFile = e.currentTarget.files[0];
+  fr.addEventListener("load", writeImage);
+  fr.readAsDataURL(myFile);
+}
+```
+
+- **Render image on the profile card:**
+
+```javascript
+function writeImage() {
+  profileImage.style.backgroundImage = `url(${fr.result})`;
+  profilePreview.style.backgroundImage = `url(${fr.result})`;
+  form.photo = fr.result;
+  setLocalStorage();
+}
+```
+
+### **5. Create card**
+
+- **Handle share collapsable container border:**
+
+```javascript
+function hideShareBorder() {
+  shareCollapsableBorder.classList.toggle("hideLineShare");
+}
+```
+
+- **Handle collapsable card link and change create card button colour:**
+
+```javascript
+function showLink() {
+  createCardbtn.classList.add("btnClick");
+  createCardCollapsable.classList.remove("hideCollapsable");
+}
+```
+
+### **6. Fetch**
+
+- **Handle API request:**
+
+```javascript
+function sendRequest() {
+  fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/", {
+    method: "POST",
+    body: JSON.stringify(form),
+    headers: {
+      "content-type": "application/json",
+    },
+  })
+    .then(function (resp) {
+      return resp.json();
+    })
+    .then(function (result) {
+      showURL(result);
+    })
+    .catch(function (error) {
+      console.log(error);
+      cardLink.innerHTML = "Error en el servidor";
+    });
+}
+```
+
+- **Render API response:**
+
+```javascript
+function showURL(result) {
+  if (result.success) {
+    cardLink.href = result.cardURL;
+    cardLink.innerHTML = cardLink.href;
+  } else {
+    cardLink.innerHTML = "ERROR: " + result.error;
+  }
+}
+```
+
+- **Share card link on Twitter:**
+
+```javascript
+function createTwitterLink(result) {
+  const twitterText = encodeURIComponent(
+    "¡Ya formo parte del mundo de las sombras gracias a DevilAPPers Profile Cards!:"
+  );
+  const twitterURL = cardLink.innerHTML;
+  twitterButton.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${twitterURL}`;
+}
+```
+
+### **7. LocalStorage**
+
+- **Set data in LocalStorage:**
+
+```javascript
+function setLocalStorage() {
+  localStorage.setItem("formData", JSON.stringify(form));
+}
+```
+
+- **Get data from LocalStorage:**
+
+```javascript
+function getLocalStorage() {
+  const localFormData = JSON.parse(localStorage.getItem("formData"));
+  if (localFormData !== null) {
+    form = localFormData;
+    document.querySelector(".js-nameInput").value = form.name;
+    document.querySelector(".js-positionInput").value = form.job;
+    document.querySelector(".js-tlInput").value = form.phone;
+    document.querySelector(".js-emailInput").value = form.email;
+    document.querySelector(".js-linkedinInput").value = form.linkedin;
+    document.querySelector(".js-gitHubInput").value = form.github;
+    profileImage.style.backgroundImage = `url(${form.photo})`;
+    profilePreview.style.backgroundImage = `url(${form.photo})`;
+    const selectedPalette = document.querySelector("#palette" + form.palette);
+    selectedPalette.click();
+  }
+  renderCard();
+  listenSaveField();
+}
+```
 
 ## **Folder Structure**
 
@@ -144,62 +396,6 @@ Profile Cards
 └── robots.txt
 ```
 
-## **Listeners and functions**
-
-### **Collapsables**
-
-- **Event listener:** arrowList[i].addEventListener("click", getCollapsable)
-- **Handle collapsables and turn pumpkins:** function getCollapsable(event)
-
-### **Palettes**
-
-- **Event listener:**
-  - palette1.addEventListener("click", selectPalette)
-  - palette2.addEventListener("click", selectPalette)
-  - palette3.addEventListener("click", selectPalette)
-  - palette4.addEventListener("click", selectPalette)
-- **Handle select palette:**
-  - function selectPalette()
-- **Render selected palette on card:** function renderPalette()
-- **Reset palettes:** function resetPalette()
-
-### **Form**
-
-- **Save form field event listener:** function listenSaveField()
-- **Handle form fields data:** function saveField(event)
-- **Render form fields data on the profile card:** renderCard()
-- **Reset button event listener:** resetButton.addEventListener("click", handleReset)
-- **Handle reset:** const handleReset
-
-### **Card image**
-
-- **Upload image event listener:** uploadBtn.addEventListener("click", fakeFileClick)
-- **Handle an automatic click on hidden input when an image is uploaded:** function fakeFileClick()
-- **Get image event listener:** fileField.addEventListener("change", getImage)
-- **Handle get image from hidden input:** function getImage(e)
-- **Render image on the profile card**: function writeImage()
-
-### **Create card**
-
-- **Share collapsable container event listener:** shareCollapsableBorder.addEventListener("click", hideShareBorder);
-- **Handle share collapsable container border:** function hideShareBorder()
-- **Create card button event listener:** btnShare.addEventListener("click", createCard)
-- **Handle collapsable card link and change create card button colour:** function showLink()
-- **Handle function create card and send request to API:** function createCard()
-
-### **Fetch**
-
-- **Send API request event listener:** createCardbtn.addEventListener("click", sendRequest)
-- **Handle API request:** sendRequest()
-- **Render API response:** function showURL(result)
-- **Twitter button event listener:** twitterButton.addEventListener("click", createTwitterLink)
-- **Share card link on Twitter:** function createTwitterLink(result)
-
-### **LocalStorage**
-
-- **Set data in LocalStorage:** function setLocalStorage()
-- **Get data from LocalStorage:** function getLocalStorage()
-
 ## **License**
 
-This project is licensed under [**MIT License**](https://spdx.org/licenses/MIT.html).
+This project is licensed under ![GitHub](https://img.shields.io/github/license/anaguerraabaroa/random-number?label=License&logo=MIT&style=for-the-badge)
