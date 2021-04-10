@@ -47,7 +47,7 @@ npm start
 
 - **[Project URL](https://anaguerraabaroa.github.io/profile-cards/)** is also available on GitHub Pages.
 
-## **Project features**
+## **Features**
 
 - Landing page
 - Generator card page
