@@ -5,7 +5,7 @@ const twitterButton = document.querySelector(".js-twitter-btn"); // Twitter butt
 
 // Send form data to API and get card link or server error
 function sendRequest() {
-  fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/", {
+  fetch("https://awesome-profile-cards.herokuapp.com/card", {
     method: "POST",
     body: JSON.stringify(form),
     headers: {
