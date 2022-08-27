@@ -12,7 +12,7 @@ let form = {
   email: "",
   linkedin: "",
   github: "",
-  photo: `url(https://i.picasion.com/pic90/02b56d6431f0a6fe7082958c95d7788d.gif)`,
+  photo: `url(../images/default_card_photo.gif)`,
 };
 const resetButton = document.querySelector(".js-resetBtn"); // Reset button
 
@@ -55,15 +55,15 @@ const handleReset = function () {
   form.linkedin = "";
   form.github = "";
   form.photo =
-    "url(https://i.picasion.com/pic90/02b56d6431f0a6fe7082958c95d7788d.gif)";
+    "url(../images/default_card_photo.gif)";
   localStorage.removeItem("formData");
   for (const input of inputList) {
     input.value = "";
   }
   profileImage.style.backgroundImage =
-    "url(https://i.picasion.com/pic90/02b56d6431f0a6fe7082958c95d7788d.gif)";
+    "url(../images/default_card_photo.gif)";
   profilePreview.style.backgroundImage =
-    "url(https://i.picasion.com/pic90/02b56d6431f0a6fe7082958c95d7788d.gif)";
+    "url(../images/default_card_photo.gif)";
 
   renderCard();
   resetPalette();
